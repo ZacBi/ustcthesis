@@ -11,6 +11,13 @@
 
 \section{系统整体架构设计}
 
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1\textwidth]{系统架构.png}
+  \caption{系统架构}
+  \label{fig:badge}
+\end{figure}
+
 由于笔者所在企业的开发要求, 软件系统的整体体系架构采用的是浏览器-服务器体系结构, 即B/S(Browser/Server)架构, 通过基于B/S架构的SaaS(Soft as a Service)平台向用户提供服务.
 其中浏览器界面负责与客户的信息交互, 在运行时间表达式的识别和解析之前, 负责获取用户输入的语料和相关的配置等.
 服务器后端开发则采用的是典型的四层架构模式, 分别为用户接口(API, Application Programming Interface)层, 外观(Facade)模式层, 服务(Service)层, 数据访问(DAO, Data Access Object)层. 详情见下图.
@@ -38,6 +45,12 @@
 三台任务服务器都使用多线程的方式运行中文时间表达式信息抽取系统, 而代理服务器采用复杂均衡的方式将用户请求产生的负载较为均匀的分配在三台任务服务器上. 复杂均衡的分布式运算使得批处理的时间大大剪短.
 中文时间表达式信息抽取系统的网络拓扑图如下图所示.
 
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1\textwidth]{网络top图.png}
+  \caption{网络top图}
+  \label{fig:badge}
+\end{figure}
 
 \section{系统功能模块设计}
 
@@ -49,6 +62,12 @@
 在单独制作模块的过程中，使用单独的制作来完成功能，确保每个用户功能的单独性，不会因为极小的变动就会影响全局，使系统的更新和改善互相独立，使系统更加的安全。
 使用模块的划分来展示系统的作用来进行相应的开发。
 
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1\textwidth]{系统功能模块.pdf}
+  \caption{系统功能模块图}
+  \label{fig:badge}
+\end{figure}
 
 \subsection{中文时间表达式识别模块}
 
@@ -119,12 +138,7 @@
     单语句可视化分析可以通过在数据库表的时间戳字段上建立索引, 并且根据行记录中的中文时间表达式解析树进行分析, 即可得到单语句可视化分析.
 \end{enumerate}
 
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=1\textwidth]{系统功能模块.pdf}
-  \caption{系统功能模块图}
-  \label{fig:badge}
-\end{figure}
+
 
 \section{数据库设计}
 
@@ -164,6 +178,14 @@
     \hline
   \end{tabular}
 \end{table}
+
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=1\textwidth]{ER图.png}
+  \caption{ER图}
+  \label{fig:badge}
+\end{figure}
 
 \section{本章小节}
 

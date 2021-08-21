@@ -10,6 +10,13 @@
 
 \subsection{中文时间表达式识别模块的设计与实现}
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{pipeline.png}
+    \caption{算法整体流水线}
+    \label{fig:badge}
+\end{figure}
+
 \subsubsection{中文时间表达式识别的概率无关上下文语法定义}
 
 中文时间表达式的识别和解析都是以概率无关上下文语法为核心算法实现的.
@@ -88,6 +95,13 @@ S则为其实符号.
 语料，语料库中的每条数据应该以（文本，结果）的文本对的形式存储，语料库作为训练集以
 求得每个产生式的似然。产生式的似然将参与求得语法树整体概率的计算.
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{preprocess.png}
+    \caption{预处理过程}
+    \label{fig:badge}
+\end{figure}
+
 \subsubsection{分析树的构建}
 
 首先需要定义与时间表达式相关的终结符（terminal）和非终结符（non-terminals），终结
@@ -109,6 +123,15 @@ S则为其实符号.
 语料，语料库中的每条数据应该以（文本，结果）的文本对的形式存储，语料库作为训练集以
 求得每个产生式的似然。产生式的似然将参与求得语法树整体概率的计算
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{tree construction.png}
+    \caption{分析树构建过程}
+    \label{fig:badge}
+\end{figure}
+
+\subsubsection{分析树的构建}
+
 \subsubsection{冲突消解}
 
 如图 9，同一个时间表达式可能解析出多棵语法树，需要最终选择在总概率上为 top-k 的
@@ -127,6 +150,38 @@ k 棵语法树，即总体概率最大的 k 棵树。解析树的整体概率为
 k 棵语法树，即总体概率最大的 k 棵树。解析树的整体概率为树上所有产生式概率的乘积，在
 本项目中将 k 的值设为 1，则最终的语法树的概率如下。S 表示识别到的时间表达式，Tree 为
 生成的解析树，n 为树中产生式的数量。
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{conflict resolution.png}
+    \caption{冲突消解}
+    \label{fig:badge}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{example_1.jpg}
+    \caption{冲突示例}
+    \label{fig:badge}
+\end{figure}
+
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{10月三日.jpg}
+    \caption{3日作为时间段识别}
+    \label{fig:badge}
+\end{figure}
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{10月三日_datetime.png}
+    \caption{10月3日作为时间点识别}
+    \label{fig:badge}
+\end{figure}
 
 
 \subsection{中文时间表达式解析模块的设计与实现}
@@ -177,6 +232,12 @@ k 棵语法树，即总体概率最大的 k 棵树。解析树的整体概率为
 格式的时间段，如‘2019 年 3 月 2 日’，表达式最终计算的结果应该为‘Interval(start=2019-03-
 02T00:00:00, end=2019-03-03T00:00:00)’。
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{时间粒度概念.jpg}
+    \caption{时间粒度概念}
+\end{figure}
+
 \subsection{时间信息抽取系统分析与展示模块}
 
 \subsubsection{用户前端交互模块设计}
@@ -189,40 +250,21 @@ R代表的是一规则或者是产生式的结合, 对于每一个产生式, 其
 P($\beta$|A)可以理解为由终止符产生相应的表达式字符串的概率, 即该产生式的概率.
 S则为其实符号.
 
-其中部分与中文整数相关的终止符定义如下:
-
-\begin{table}[h]
+\begin{figure}[h]
     \centering
-    \caption{部分中文整数终止符}
-    \begin{tabular}{*{4}{c}}
-        \toprule
-        类名                  & 描述                                                                         & 蕴含字符                       & 对应数字                          \\
-        \midrule
-        CHINESE\_DIGITS       & 简体中文数字                                                                 & \makecell*[c]{〇,一, 二,三,四,                                     \\ 五,六,七,八,九} & \makecell*[c]{0, 1, 2, 3, 4, \\ 5, 6, 7, 8, 9}         \\
-        CHINESE\_DIGITS\_TRAD & 繁体中文数字                                                                 & \makecell*[c]{零,壹,贰,叁,肆,                                      \\ 伍,陆,柒,捌,玖}  & \makecell*[c]{0, 1, 2, 3, 4, \\ 5, 6, 7, 8, 9}         \\
-        CHINESE\_UNITS        & \makecell*[c]{简体中文                                             数字单位} & \makecell*[c]{十, 百, 千,                                          \\ 万, 十万, 百万}     & \makecell*[c]{$10^1, 10^2, 10^3,$ \\ $10^4, 10^5, 10^6$} \\
-        CHINESE\_UNITS\_TRAD  & \makecell*[c]{繁体中文                                             数字单位} & 拾,佰,仟,萬,億                 & \makecell*[c]{$10^1, 10^2, 10^3,$ \\ $10^4, 10^8$}       \\
-        \bottomrule
-    \end{tabular}
-\end{table}
+    \includegraphics[width=1\textwidth]{web流程.png}
+    \caption{前端交互流程图}
+\end{figure}
 
-
-部分与阿拉伯整数相关的终止符相关的终止符定义如下
-
-\begin{table}[h]
-    \centering
-    \caption{部分中文整数终止符}
-    \begin{tabular}{*{4}{c}}
-        \toprule
-        类名         & 描述       & 蕴含字符                     & 对应数字     \\
-        \midrule
-        ArabicDigit  & 阿拉伯数字 & \makecell*[c]{0, 1, 2, 3, 4,                \\ 5, 6, 7, 8, 9} & \makecell*[c]{0, 1, 2, 3, 4, \\ 5, 6, 7, 8, 9}         \\
-        MIXED\_SIGNS & 正负符号   & 正, +, 负, -                 & 1, 1, -1, -1 \\
-        \bottomrule
-    \end{tabular}
-\end{table}
 
 \subsubsection{MongoDB查询语言设计}
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{部分语料识别结果.jpg}
+    \caption{部分语料识别结果}
+\end{figure}
 
 在前文已经给出定义与时间表达式相关的终结符（terminal）和非终结符（non-terminals），终结
 符在文本匹配中类似于正则表达式，以确定时间表达式的区间（span）。非终结符则在最后对
