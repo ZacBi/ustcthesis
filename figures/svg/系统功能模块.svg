@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="621px"
+   height="661px"
+   viewBox="-0.5 -0.5 621 661"
+   content="&lt;mxfile host=&quot;Electron&quot; modified=&quot;2021-09-16T14:35:50.745Z&quot; agent=&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/15.2.7 Chrome/93.0.4577.63 Electron/14.0.1 Safari/537.36&quot; version=&quot;15.2.7&quot; etag=&quot;JdUjeYxAqpjIbWAcuI35&quot; type=&quot;device&quot;&gt;&lt;diagram id=&quot;VLuHDkDJqgztnp5l9zVv&quot;&gt;7VpNj9owEP01vlZxPu1jAqG9VK3KodtjSlyIFAjKhgX66zt27HxhJJaFbEJXQmI8nnHi954njhVkTdaHz3m0XX3NYpYi04gPyJoi08SW6cIf9xxLD3WlY5knsQyqHfPkL5NOQ3p3ScyeW4FFlqVFsm07F9lmwxZFyxflebZvh/3J0vZVt9GSnTjmiyg99f5M4mJVeonp1f4vLFmu1JWxS8uedaSC5UyeV1Gc7RsuK0TWJM+yorTWhwlLOXgKlzJvdqa3urGcbYpLEswy4SVKd3JuKLRRQJA/RaGLqIuIJwwPBS4KqTBsFEIARj7hRhDyX+igYILITKTPeC9kEYiZCcNHwZTHQACMGcIgFgoCYQSIziQYxVEhnGe7Tcz4TRrICvarpGDzbbTgvXvQFPhWxTqFFgZTzoHlBTucxQFX6IIsWbZmRX6EEJlgSz6kIG3V3tf0YiJ9qwa1rvRFUlHLauQadDAk7noOrNtzAF0e8i2RFSJqcMMX8RBDp3yE90a8gu7YafcBua2H/PW65V0EEbeBtKCOlGxgRB0e7IPTHwEJFumRBOcuup8JNgQtfjACyB2jR8jdO+q+7FI1h8ASc1O49eB3DtaSW421QZFv8piSZ0r5gEA7JWJkU9A7eOpcs0fqPA112jJvIIprEvjaCIZZfGzSeQL0iCbRoOlwPQemqNc+XwsAGRQeQlpADxxE3OfOhZ7TZCk8QI6vbFEYSg9IlAxxZZ9Isc/NiHqracHo8p1DYKi66AkYsajBjljawSiedl1ge91gYKwHtrOfAPSmYp8GBvysUQLb6zYCn742fpv8GCVuvT7DseZVrwsI28Q+P6KA1ibbsDYAMMn8+NRs/OLIfXJUc3qQSJato2odkuKpYTeyoFUn8UaVEy/ZXN4XS39n+7B2SCZ4SIuH52yXL6RLzrWI8iWTGJoXs9Vgw9GQoXw5S6MieWnfhI4heYXvWQIXrsRg0TOLSA1RzkdmNY9ROgPZ3fMDpzNQicLJQEIw1bQv05Dm3fU6DRnXaQj3qCHzVEP2wDTUkVAlqddKCHckZNn3k5Dmzfthy5A7/DJkeh3qry1DkNkuQ+R+GtIcJfSjoTfqwRmfHtzu3mOIetCcTzxsTfFONWQNXEOjqCmaU5mH1RAZvobszt7m2jJU7YbPafGGEtIcST2shOj4JIS71WOAGlInAqPb2qiDxKYgnA9BvF0QmnPE9xfENRXnEhGpD2pGJCLbvJGInPu9dCvN/B8iMj9EdAMRQbP+FKwMrz+os8J/&lt;/diagram&gt;&lt;/mxfile&gt;"
+   id="svg2481"
+   sodipodi:docname="系统功能模块.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <sodipodi:namedview
+     id="namedview2483"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.1391831"
+     inkscape:cx="310.31009"
+     inkscape:cy="330.06109"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="1072"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="switch2399" />
+  <defs
+     id="defs2361" />
+  <g
+     id="g2471">
+    <rect
+       x="0"
+       y="420"
+       width="180"
+       height="60"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect2363" />
+    <g
+       transform="translate(-0.5 -0.5)"
+       id="g2369">
+      <switch
+         id="switch2367">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 178px; height: 1px; padding-top: 450px; margin-left: 1px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">中文时间表达式信息抽取系统</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="90"
+           y="454"
+           fill="#000000"
+           font-family="Helvetica"
+           font-size="12px"
+           text-anchor="middle"
+           id="text2365">中文时间表达式信息抽取系统</text>
+      </switch>
+    </g>
+    <rect
+       x="220"
+       y="240"
+       width="180"
+       height="60"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect2371" />
+    <g
+       transform="translate(-0.5 -0.5)"
+       id="g2377">
+      <switch
+         id="switch2375">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 178px; height: 1px; padding-top: 270px; margin-left: 221px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">中文时间表达式解析模块</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="310"
+           y="274"
+           fill="#000000"
+           font-family="Helvetica"
+           font-size="12px"
+           text-anchor="middle"
+           id="text2373">中文时间表达式解析模块</text>
+      </switch>
+    </g>
+    <rect
+       x="220"
+       y="360"
+       width="180"
+       height="60"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect2379" />
+    <g
+       transform="translate(-0.5 -0.5)"
+       id="g2385">
+      <switch
+         id="switch2383">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 178px; height: 1px; padding-top: 390px; margin-left: 221px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">信息抽取系统分析与展示模块</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="310"
+           y="394"
+           fill="#000000"
+           font-family="Helvetica"
+           font-size="12px"
+           text-anchor="middle"
+           id="text2381">信息抽取系统分析与展示模块</text>
+      </switch>
+    </g>
+    <rect
+       x="220"
+       y="480"
+       width="180"
+       height="60"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect2387" />
+    <g
+       transform="translate(-0.5 -0.5)"
+       id="g2393">
+      <switch
+         id="switch2391">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 178px; height: 1px; padding-top: 510px; margin-left: 221px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">中文时间表达式识别模块</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="310"
+           y="514"
+           fill="#000000"
+           font-family="Helvetica"
+           font-size="12px"
+           text-anchor="middle"
+           id="text2389">中文时间表达式识别模块</text>
+      </switch>
+    </g>
+    <rect
+       x="220"
+       y="600"
+       width="180"
+       height="60"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect2395" />
+    <g
+       transform="translate(-0.5 -0.5)"
+       id="g2401">
+      <switch
+         id="switch2399">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 178px; height: 1px; padding-top: 630px; margin-left: 221px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">信息抽取系统分析结构<xhtml:br />
+与预料存储模块</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="309.12219"
+           y="627.85522"
+           fill="#000000"
+           font-family="Helvetica"
+           font-size="12px"
+           text-anchor="middle"
+           id="text2397"><tspan
+             sodipodi:role="line"
+             id="tspan2507"
+             x="309.12219"
+             y="627.85522">信息抽取系统分析结构与</tspan><tspan
+             sodipodi:role="line"
+             id="tspan2509"
+             x="309.12219"
+             y="643.01855">预料存储模块</tspan></text>
+      </switch>
+    </g>
+    <rect
+       x="440"
+       y="0"
+       width="180"
+       height="60"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect2403" />
+    <g
+       transform="translate(-0.5 -0.5)"
+       id="g2409">
+      <switch
+         id="switch2407">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 178px; height: 1px; padding-top: 30px; margin-left: 441px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">解析树构建模块</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="530"
+           y="34"
+           fill="#000000"
+           font-family="Helvetica"
+           font-size="12px"
+           text-anchor="middle"
+           id="text2405">解析树构建模块</text>
+      </switch>
+    </g>
+    <rect
+       x="440"
+       y="120"
+       width="180"
+       height="60"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect2411" />
+    <g
+       transform="translate(-0.5 -0.5)"
+       id="g2417">
+      <switch
+         id="switch2415">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 178px; height: 1px; padding-top: 150px; margin-left: 441px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">冲突消解模块</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="530"
+           y="154"
+           fill="#000000"
+           font-family="Helvetica"
+           font-size="12px"
+           text-anchor="middle"
+           id="text2413">冲突消解模块</text>
+      </switch>
+    </g>
+    <rect
+       x="440"
+       y="240"
+       width="180"
+       height="60"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect2419" />
+    <g
+       transform="translate(-0.5 -0.5)"
+       id="g2425">
+      <switch
+         id="switch2423">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 178px; height: 1px; padding-top: 270px; margin-left: 441px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">规则组合模块</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="530"
+           y="274"
+           fill="#000000"
+           font-family="Helvetica"
+           font-size="12px"
+           text-anchor="middle"
+           id="text2421">规则组合模块</text>
+      </switch>
+    </g>
+    <rect
+       x="440"
+       y="360"
+       width="180"
+       height="60"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect2427" />
+    <g
+       transform="translate(-0.5 -0.5)"
+       id="g2433">
+      <switch
+         id="switch2431">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 178px; height: 1px; padding-top: 390px; margin-left: 441px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">数字类型识别模块</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="530"
+           y="394"
+           fill="#000000"
+           font-family="Helvetica"
+           font-size="12px"
+           text-anchor="middle"
+           id="text2429">数字类型识别模块</text>
+      </switch>
+    </g>
+    <rect
+       x="440"
+       y="480"
+       width="180"
+       height="60"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect2435" />
+    <g
+       transform="translate(-0.5 -0.5)"
+       id="g2441">
+      <switch
+         id="switch2439">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 178px; height: 1px; padding-top: 510px; margin-left: 441px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">时间单元识别模块</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="530"
+           y="514"
+           fill="#000000"
+           font-family="Helvetica"
+           font-size="12px"
+           text-anchor="middle"
+           id="text2437">时间单元识别模块</text>
+      </switch>
+    </g>
+    <rect
+       x="440"
+       y="600"
+       width="180"
+       height="60"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect2443" />
+    <g
+       transform="translate(-0.5 -0.5)"
+       id="g2449">
+      <switch
+         id="switch2447">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 178px; height: 1px; padding-top: 630px; margin-left: 441px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">OCR识别模块</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="530"
+           y="634"
+           fill="#000000"
+           font-family="Helvetica"
+           font-size="12px"
+           text-anchor="middle"
+           id="text2445">OCR识别模块</text>
+      </switch>
+    </g>
+    <path
+       d="M 220 270 L 210 270 Q 200 270 200 280 L 200 440 Q 200 450 190 450 L 180 450"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path2451" />
+    <path
+       d="M 180 450 L 190 450 Q 200 450 200 440 L 200 400 Q 200 390 210 390 L 220 390"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path2453" />
+    <path
+       d="M 220 630 L 210 630 Q 200 630 200 620 L 200 460 Q 200 450 190 450 L 180 450"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path2455" />
+    <path
+       d="M 220 510 L 210 510 Q 200 510 200 500 L 200 460 Q 200 450 190 450 L 180 450"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path2457" />
+    <path
+       d="M 440 30 L 430 30 Q 420 30 420 40 L 420 260 Q 420 270 410 270 L 400 270"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path2459" />
+    <path
+       d="M 440 150 L 430 150 Q 420 150 420 160 L 420 260 Q 420 270 410 270 L 400 270"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path2461" />
+    <path
+       d="M 440 270 L 430 270 Q 420 270 410 270 L 400 270"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path2463" />
+    <path
+       d="M 440 390 L 430 390 Q 420 390 420 400 L 420 500 Q 420 510 410 510 L 400 510"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path2465" />
+    <path
+       d="M 440 510 L 430 510 Q 420 510 410 510 L 400 510"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path2467" />
+    <path
+       d="M 440 630 L 430 630 Q 420 630 420 620 L 420 520 Q 420 510 410 510 L 400 510"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path2469" />
+  </g>
+  <switch
+     id="switch2479">
+    <g
+       requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+       id="g2473" />
+    <a
+       transform="translate(0,-5)"
+       xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems"
+       target="_blank"
+       id="a2477">
+      <text
+         text-anchor="middle"
+         font-size="10px"
+         x="50%"
+         y="100%"
+         id="text2475">Viewer does not support full SVG 1.1</text>
+    </a>
+  </switch>
+</svg>
