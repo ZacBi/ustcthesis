@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>Python</ID>
+  <OriginalElement>#N:/File/wsl_github_backup_3/company/frankenstein/frankenstein/numerals/arabic.py</OriginalElement>
+  <nodes>
+    <node x="2249.75" y="719.0">pcfg.cfg.symbols.Symbol</node>
+    <node x="2015.75" y="964.0">pcfg.cfg.symbols.NonTerminalSymbol</node>
+    <node x="1286.715909090909" y="336.5">pcfg.cfg.symbols.SymbolMeta</node>
+    <node x="3021.0" y="1496.5">frankenstein.numerals.arabic.ArabicUnsignedInteger</node>
+    <node x="0.0" y="1508.5">frankenstein.numerals.arabic.ArabicDigit</node>
+    <node x="1373.0" y="1485.0">frankenstein.numerals.arabic.ArabicDigitOom</node>
+    <node x="134.75" y="776.5">pcfg.cfg.symbols.TerminalSymbolMetaclass</node>
+    <node x="694.0" y="1508.5">frankenstein.numerals.arabic.Comma</node>
+    <node x="1758.0" y="1485.0">frankenstein.numerals.arabic.ArabicDigitsAndCommaOom</node>
+    <node x="837.2159090909091" y="719.0">pcfg.cfg.symbols.NonTerminalSymbolMetaclass</node>
+    <node x="2236.0" y="1462.0">frankenstein.numerals.arabic.ArabicInteger</node>
+    <node x="382.0" y="1056.0">pcfg.cfg.symbols.TerminalSymbol</node>
+    <node x="1017.0" y="1496.5">frankenstein.numerals.arabic.ArabicDigits</node>
+    <node x="2287.25" y="0.0">typing.Hashable</node>
+    <node x="349.0" y="1485.0">frankenstein.numerals.arabic.MixedSign</node>
+    <node x="2603.0" y="1496.5">frankenstein.numerals.arabic.ArabicSignedInteger</node>
+    <node x="2240.75" y="106.0">object</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="frankenstein.numerals.arabic.ArabicDigitOom" target="pcfg.cfg.symbols.NonTerminalSymbol" relationship="REALIZATION">
+      <point x="0.0" y="-51.5" />
+      <point x="1555.5" y="1437.0" />
+      <point x="2198.25" y="1437.0" />
+      <point x="0.0" y="224.0" />
+    </edge>
+    <edge source="pcfg.cfg.symbols.TerminalSymbol" target="pcfg.cfg.symbols.Symbol" relationship="REALIZATION">
+      <point x="73.0" y="-132.0" />
+      <point x="601.0" y="939.0" />
+      <point x="2359.25" y="939.0" />
+      <point x="0.0" y="97.5" />
+    </edge>
+    <edge source="frankenstein.numerals.arabic.ArabicDigitsAndCommaOom" target="pcfg.cfg.symbols.NonTerminalSymbol" relationship="REALIZATION">
+      <point x="0.0" y="-51.5" />
+      <point x="1987.0" y="1437.0" />
+      <point x="2198.25" y="1437.0" />
+      <point x="0.0" y="224.0" />
+    </edge>
+    <edge source="frankenstein.numerals.arabic.ArabicInteger" target="pcfg.cfg.symbols.NonTerminalSymbol" relationship="REALIZATION">
+      <point x="0.0" y="-74.5" />
+      <point x="2409.5" y="1437.0" />
+      <point x="2198.25" y="1437.0" />
+      <point x="0.0" y="224.0" />
+    </edge>
+    <edge source="frankenstein.numerals.arabic.ArabicDigit" target="pcfg.cfg.symbols.TerminalSymbol" relationship="REALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="164.5" y="1437.0" />
+      <point x="528.0" y="1437.0" />
+      <point x="0.0" y="132.0" />
+    </edge>
+    <edge source="frankenstein.numerals.arabic.Comma" target="pcfg.cfg.symbols.TerminalSymbol" relationship="REALIZATION">
+      <point x="0.0" y="-28.0" />
+      <point x="845.5" y="1437.0" />
+      <point x="528.0" y="1437.0" />
+      <point x="0.0" y="132.0" />
+    </edge>
+    <edge source="object" target="typing.Hashable" relationship="INTERFACE">
+      <point x="0.0" y="-281.5" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="frankenstein.numerals.arabic.MixedSign" target="pcfg.cfg.symbols.TerminalSymbol" relationship="REALIZATION">
+      <point x="0.0" y="-51.5" />
+      <point x="511.5" y="1437.0" />
+      <point x="528.0" y="1437.0" />
+      <point x="0.0" y="132.0" />
+    </edge>
+    <edge source="pcfg.cfg.symbols.Symbol" target="object" relationship="REALIZATION">
+      <point x="54.75" y="-97.5" />
+      <point x="2414.0" y="699.0" />
+      <point x="2364.25" y="699.0" />
+      <point x="0.0" y="281.5" />
+    </edge>
+    <edge source="pcfg.cfg.symbols.TerminalSymbolMetaclass" target="pcfg.cfg.symbols.SymbolMeta" relationship="REALIZATION">
+      <point x="0.0" y="-40.0" />
+      <point x="311.75" y="699.0" />
+      <point x="519.6704545454547" y="699.0" />
+      <point x="519.6704545454547" y="689.0" />
+      <point x="1350.965909090909" y="689.0" />
+      <point x="-64.25" y="51.0" />
+    </edge>
+    <edge source="frankenstein.numerals.arabic.ArabicSignedInteger" target="pcfg.cfg.symbols.NonTerminalSymbol" relationship="REALIZATION">
+      <point x="0.0" y="-40.0" />
+      <point x="2802.0" y="1437.0" />
+      <point x="2198.25" y="1437.0" />
+      <point x="0.0" y="224.0" />
+    </edge>
+    <edge source="pcfg.cfg.symbols.NonTerminalSymbol" target="pcfg.cfg.symbols.NonTerminalSymbolMetaclass" relationship="INSTANCEOF">
+      <point x="-91.25" y="-224.0" />
+      <point x="2107.0" y="934.0" />
+      <point x="1029.715909090909" y="934.0" />
+      <point x="0.0" y="97.5" />
+    </edge>
+    <edge source="frankenstein.numerals.arabic.ArabicDigits" target="pcfg.cfg.symbols.NonTerminalSymbol" relationship="REALIZATION">
+      <point x="0.0" y="-40.0" />
+      <point x="1185.0" y="1437.0" />
+      <point x="2198.25" y="1437.0" />
+      <point x="0.0" y="224.0" />
+    </edge>
+    <edge source="pcfg.cfg.symbols.NonTerminalSymbolMetaclass" target="pcfg.cfg.symbols.SymbolMeta" relationship="REALIZATION">
+      <point x="0.0" y="-97.5" />
+      <point x="1029.715909090909" y="699.0" />
+      <point x="519.6704545454547" y="699.0" />
+      <point x="519.6704545454547" y="689.0" />
+      <point x="1350.965909090909" y="689.0" />
+      <point x="-64.25" y="51.0" />
+    </edge>
+    <edge source="frankenstein.numerals.arabic.ArabicUnsignedInteger" target="pcfg.cfg.symbols.NonTerminalSymbol" relationship="REALIZATION">
+      <point x="0.0" y="-40.0" />
+      <point x="3229.0" y="1437.0" />
+      <point x="2198.25" y="1437.0" />
+      <point x="0.0" y="224.0" />
+    </edge>
+    <edge source="pcfg.cfg.symbols.NonTerminalSymbol" target="pcfg.cfg.symbols.Symbol" relationship="REALIZATION">
+      <point x="91.25" y="-224.0" />
+      <point x="2289.5" y="944.0" />
+      <point x="2359.25" y="944.0" />
+      <point x="0.0" y="97.5" />
+    </edge>
+    <edge source="pcfg.cfg.symbols.TerminalSymbol" target="pcfg.cfg.symbols.TerminalSymbolMetaclass" relationship="INSTANCEOF">
+      <point x="-73.0" y="-132.0" />
+      <point x="455.0" y="944.0" />
+      <point x="311.75" y="944.0" />
+      <point x="0.0" y="40.0" />
+    </edge>
+    <edge source="pcfg.cfg.symbols.Symbol" target="pcfg.cfg.symbols.SymbolMeta" relationship="INSTANCEOF">
+      <point x="-54.75" y="-97.5" />
+      <point x="2304.5" y="699.0" />
+      <point x="1479.465909090909" y="699.0" />
+      <point x="64.25" y="51.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0210153312120334" showDependencies="false" x="1899.6847987760827" y="1137.7123879053142" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+</Diagram>
+

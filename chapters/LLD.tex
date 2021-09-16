@@ -10,7 +10,14 @@
 
 \subsection{中文时间表达式识别模块的设计与实现}
 
-\subsubsection{中文时间表达式识别的概率无关上下文语法定义}
+\subsubsection{数值类型}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{numeral_terminal.pdf}
+    \caption{数值类型终止符号类图}
+    \label{fig:badge}
+\end{figure}
 
 中文时间表达式的识别和解析都是以概率无关上下文语法为核心算法实现的.
 对于中文时间表达式, 涉及到两个比较关键的部分, 一部分是对数字部分的识别, 另一部分是对时间单元的识别, 最后是有机的将这些识别规则组合到一起.
@@ -18,27 +25,13 @@
 R代表的是一规则或者是产生式的结合, 对于每一个产生式, 其组成形式应该为 A $\rightarrow$ $\beta$[p], 其中A应该为一个非终止符, beta是一个包含0个或多个符号的字符串,
 字符串的形式应该为($\varSigma$ $\cup$ N), 即非终结符与终结符的交集中产生的字符串. p则为一个介于0和1中间的数字, 表示 P($\beta$|A)的概率.
 P($\beta$|A)可以理解为由终止符产生相应的表达式字符串的概率, 即该产生式的概率.
-S则为其实符号.
-中文时间表达式的识别和解析都是以概率无关上下文语法为核心算法实现的.
-对于中文时间表达式, 涉及到两个比较关键的部分, 一部分是对数字部分的识别, 另一部分是对时间单元的识别, 最后是有机的将这些识别规则组合到一起.
-概率无关上下文语法通常四元组的形式出现: (N, R, S,  $\varSigma$). 其中N代表的是非终止符号集合, $\varSigma$ 代表的是终止符号的集合, $\varSigma$.
-R代表的是一规则或者是产生式的结合, 对于每一个产生式, 其组成形式应该为 A $\rightarrow$ $\beta$[p], 其中A应该为一个非终止符, beta是一个包含0个或多个符号的字符串,
-字符串的形式应该为($\varSigma$ $\cup$ N), 即非终结符与终结符的交集中产生的字符串. p则为一个介于0和1中间的数字, 表示 P($\beta$|A)的概率.
-P($\beta$|A)可以理解为由终止符产生相应的表达式字符串的概率, 即该产生式的概率.
-S则为其实符号.
-中文时间表达式的识别和解析都是以概率无关上下文语法为核心算法实现的.
-对于中文时间表达式, 涉及到两个比较关键的部分, 一部分是对数字部分的识别, 另一部分是对时间单元的识别, 最后是有机的将这些识别规则组合到一起.
-概率无关上下文语法通常四元组的形式出现: (N, R, S,  $\varSigma$). 其中N代表的是非终止符号集合, $\varSigma$ 代表的是终止符号的集合, $\varSigma$.
-R代表的是一规则或者是产生式的结合, 对于每一个产生式, 其组成形式应该为 A $\rightarrow$ $\beta$[p], 其中A应该为一个非终止符, beta是一个包含0个或多个符号的字符串,
-字符串的形式应该为($\varSigma$ $\cup$ N), 即非终结符与终结符的交集中产生的字符串. p则为一个介于0和1中间的数字, 表示 P($\beta$|A)的概率.
-P($\beta$|A)可以理解为由终止符产生相应的表达式字符串的概率, 即该产生式的概率.
-S则为其实符号.
+S则为起始符号.
 
-其中部分与中文整数相关的终止符定义如下:
+其中部分与数值类型相关的终止符定义如下:
 
 \begin{table}[h]
     \centering
-    \caption{部分中文整数终止符}
+    \caption{部分数值类型终止符}
     \begin{tabular}{*{4}{c}}
         \toprule
         类名                  & 描述                                                                         & 蕴含字符                       & 对应数字                          \\
@@ -47,25 +40,32 @@ S则为其实符号.
         CHINESE\_DIGITS\_TRAD & 繁体中文数字                                                                 & \makecell*[c]{零,壹,贰,叁,肆,                                      \\ 伍,陆,柒,捌,玖}  & \makecell*[c]{0, 1, 2, 3, 4, \\ 5, 6, 7, 8, 9}         \\
         CHINESE\_UNITS        & \makecell*[c]{简体中文                                             数字单位} & \makecell*[c]{十, 百, 千,                                          \\ 万, 十万, 百万}     & \makecell*[c]{$10^1, 10^2, 10^3,$ \\ $10^4, 10^5, 10^6$} \\
         CHINESE\_UNITS\_TRAD  & \makecell*[c]{繁体中文                                             数字单位} & 拾,佰,仟,萬,億                 & \makecell*[c]{$10^1, 10^2, 10^3,$ \\ $10^4, 10^8$}       \\
+        ARABIC\_DIGIT         & 阿拉伯数字                                                                   & \makecell*[c]{0, 1, 2, 3, 4,                                       \\ 5, 6, 7, 8, 9} & \makecell*[c]{0, 1, 2, 3, 4, \\ 5, 6, 7, 8, 9}         \\
+        MIXED\_SIGNS          & 正负符号                                                                     & 正, +, 负, -                   & 1, 1, -1, -1                      \\
         \bottomrule
     \end{tabular}
 \end{table}
 
-
-部分与阿拉伯整数相关的终止符相关的终止符定义如下
 
 \begin{table}[h]
     \centering
-    \caption{部分中文整数终止符}
+    \caption{部分数值类型非终止符及产生式}
     \begin{tabular}{*{4}{c}}
         \toprule
-        类名         & 描述       & 蕴含字符                     & 对应数字     \\
+        类名                               & 描述                   & 产生式                                                                                                                                         & 示例 \\
         \midrule
-        ArabicDigit  & 阿拉伯数字 & \makecell*[c]{0, 1, 2, 3, 4,                \\ 5, 6, 7, 8, 9} & \makecell*[c]{0, 1, 2, 3, 4, \\ 5, 6, 7, 8, 9}         \\
-        MIXED\_SIGNS & 正负符号   & 正, +, 负, -                 & 1, 1, -1, -1 \\
+        CHINESE\_MIXED\_DIGITS\_AND\_UNITS & 中文阿拉伯数字混合类型 & ChineseMixedDigitsAndUnits \rightarrow MixedDigits + ChineseUnits; ChineseMixedDigitsAndUnits \rightarrow ArabicUnsignedInteger + ChineseUnits &      \\
         \bottomrule
     \end{tabular}
 \end{table}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{numeral_nonterminal.pdf}
+    \caption{部分数值类型非终止符号类图}
+    \label{fig:badge}
+\end{figure}
+
 
 \subsubsection{预处理过程}
 
@@ -111,18 +111,13 @@ S则为其实符号.
 
 \subsubsection{冲突消解}
 
-如图 9，同一个时间表达式可能解析出多棵语法树，需要最终选择在总概率上为 top-k 的
-k 棵语法树，即总体概率最大的 k 棵树。解析树的整体概率为树上所有产生式概率的乘积，在
-本项目中将 k 的值设为 1，则最终的语法树的概率如下。S 表示识别到的时间表达式，Tree 为
-生成的解析树，n 为树中产生式的数量。
-如图 9，同一个时间表达式可能解析出多棵语法树，需要最终选择在总概率上为 top-k 的
-k 棵语法树，即总体概率最大的 k 棵树。解析树的整体概率为树上所有产生式概率的乘积，在
-本项目中将 k 的值设为 1，则最终的语法树的概率如下。S 表示识别到的时间表达式，Tree 为
-生成的解析树，n 为树中产生式的数量。
-如图 9，同一个时间表达式可能解析出多棵语法树，需要最终选择在总概率上为 top-k 的
-k 棵语法树，即总体概率最大的 k 棵树。解析树的整体概率为树上所有产生式概率的乘积，在
-本项目中将 k 的值设为 1，则最终的语法树的概率如下。S 表示识别到的时间表达式，Tree 为
-生成的解析树，n 为树中产生式的数量。
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{arabic.pdf}
+    \caption{系统功能模块图}
+    \label{fig:badge}
+\end{figure}
+
 如图 9，同一个时间表达式可能解析出多棵语法树，需要最终选择在总概率上为 top-k 的
 k 棵语法树，即总体概率最大的 k 棵树。解析树的整体概率为树上所有产生式概率的乘积，在
 本项目中将 k 的值设为 1，则最终的语法树的概率如下。S 表示识别到的时间表达式，Tree 为
