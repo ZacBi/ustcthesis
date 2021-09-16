@@ -1,23 +1,15 @@
 % !TeX root = ../main.tex
 % LLD: Low Level Design
 
-\chapter{详细设计与实现}
+\chapter{详细设计与实现}s
 
 本章节主要在概要设计的基础之上, 对本中文时间表达式信息抽取系统的详细设计给出具体解决方案并进行实现, 其内容主要包括各个模块的详细设计和逻辑实现.
 本章节深入理解概率无关上下文语法的原理及其工作的上下文环境, 设计实现各种识别和解析规则, 完成本中文时间表达式信息抽取系统的编码实现.
 
-\section{模块设计与实现}
 
-\subsection{中文时间表达式识别模块的设计与实现}
+\section{中文时间表达式识别模块的设计与实现}
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=1\textwidth]{pipeline.png}
-    \caption{算法整体流水线}
-    \label{fig:badge}
-\end{figure}
-
-\subsubsection{中文时间表达式识别的概率无关上下文语法定义}
+\subsection{概述}
 
 中文时间表达式的识别和解析都是以概率无关上下文语法为核心算法实现的.
 对于中文时间表达式, 涉及到两个比较关键的部分, 一部分是对数字部分的识别, 另一部分是对时间单元的识别, 最后是有机的将这些识别规则组合到一起.
@@ -25,27 +17,20 @@
 R代表的是一规则或者是产生式的结合, 对于每一个产生式, 其组成形式应该为 A $\rightarrow$ $\beta$[p], 其中A应该为一个非终止符, beta是一个包含0个或多个符号的字符串,
 字符串的形式应该为($\varSigma$ $\cup$ N), 即非终结符与终结符的交集中产生的字符串. p则为一个介于0和1中间的数字, 表示 P($\beta$|A)的概率.
 P($\beta$|A)可以理解为由终止符产生相应的表达式字符串的概率, 即该产生式的概率.
-S则为其实符号.
-中文时间表达式的识别和解析都是以概率无关上下文语法为核心算法实现的.
-对于中文时间表达式, 涉及到两个比较关键的部分, 一部分是对数字部分的识别, 另一部分是对时间单元的识别, 最后是有机的将这些识别规则组合到一起.
-概率无关上下文语法通常四元组的形式出现: (N, R, S,  $\varSigma$). 其中N代表的是非终止符号集合, $\varSigma$ 代表的是终止符号的集合, $\varSigma$.
-R代表的是一规则或者是产生式的结合, 对于每一个产生式, 其组成形式应该为 A $\rightarrow$ $\beta$[p], 其中A应该为一个非终止符, beta是一个包含0个或多个符号的字符串,
-字符串的形式应该为($\varSigma$ $\cup$ N), 即非终结符与终结符的交集中产生的字符串. p则为一个介于0和1中间的数字, 表示 P($\beta$|A)的概率.
-P($\beta$|A)可以理解为由终止符产生相应的表达式字符串的概率, 即该产生式的概率.
-S则为其实符号.
-中文时间表达式的识别和解析都是以概率无关上下文语法为核心算法实现的.
-对于中文时间表达式, 涉及到两个比较关键的部分, 一部分是对数字部分的识别, 另一部分是对时间单元的识别, 最后是有机的将这些识别规则组合到一起.
-概率无关上下文语法通常四元组的形式出现: (N, R, S,  $\varSigma$). 其中N代表的是非终止符号集合, $\varSigma$ 代表的是终止符号的集合, $\varSigma$.
-R代表的是一规则或者是产生式的结合, 对于每一个产生式, 其组成形式应该为 A $\rightarrow$ $\beta$[p], 其中A应该为一个非终止符, beta是一个包含0个或多个符号的字符串,
-字符串的形式应该为($\varSigma$ $\cup$ N), 即非终结符与终结符的交集中产生的字符串. p则为一个介于0和1中间的数字, 表示 P($\beta$|A)的概率.
-P($\beta$|A)可以理解为由终止符产生相应的表达式字符串的概率, 即该产生式的概率.
-S则为其实符号.
+S则为起始符号.
 
-其中部分与中文整数相关的终止符定义如下:
+
+\subsection{数值类型识别子模块的设计与实现}
+
+\subsubsection{数值类型终止符定义}
+
+数值类型终止符主要涉及到阿拉伯数字与中文数字的识别, 出于使用场景的考虑, 文字识别中并没有带上英文数字表示, 那已经超过日常生产环境的使用范围.
+
+数值类型终止符主要通过
 
 \begin{table}[h]
     \centering
-    \caption{部分中文整数终止符}
+    \caption{部分数值类型终止符}
     \begin{tabular}{*{4}{c}}
         \toprule
         类名                  & 描述                                                                         & 蕴含字符                       & 对应数字                          \\
@@ -54,25 +39,44 @@ S则为其实符号.
         CHINESE\_DIGITS\_TRAD & 繁体中文数字                                                                 & \makecell*[c]{零,壹,贰,叁,肆,                                      \\ 伍,陆,柒,捌,玖}  & \makecell*[c]{0, 1, 2, 3, 4, \\ 5, 6, 7, 8, 9}         \\
         CHINESE\_UNITS        & \makecell*[c]{简体中文                                             数字单位} & \makecell*[c]{十, 百, 千,                                          \\ 万, 十万, 百万}     & \makecell*[c]{$10^1, 10^2, 10^3,$ \\ $10^4, 10^5, 10^6$} \\
         CHINESE\_UNITS\_TRAD  & \makecell*[c]{繁体中文                                             数字单位} & 拾,佰,仟,萬,億                 & \makecell*[c]{$10^1, 10^2, 10^3,$ \\ $10^4, 10^8$}       \\
+        ARABIC\_DIGIT         & 阿拉伯数字                                                                   & \makecell*[c]{0, 1, 2, 3, 4,                                       \\ 5, 6, 7, 8, 9} & \makecell*[c]{0, 1, 2, 3, 4, \\ 5, 6, 7, 8, 9}         \\
+        MIXED\_SIGNS          & 正负符号                                                                     & 正, +, 负, -                   & 1, 1, -1, -1                      \\
         \bottomrule
     \end{tabular}
 \end{table}
 
 
-部分与阿拉伯整数相关的终止符相关的终止符定义如下
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{numeral_terminal.pdf}
+    \caption{数值类型终止符号类图}
+    \label{fig:badge}
+\end{figure}
+
+
+其中部分与数值类型相关的终止符定义如下:
+
+
 
 \begin{table}[h]
     \centering
-    \caption{部分中文整数终止符}
+    \caption{部分数值类型非终止符及产生式}
     \begin{tabular}{*{4}{c}}
         \toprule
-        类名         & 描述       & 蕴含字符                     & 对应数字     \\
+        类名                               & 描述                   & 产生式                                                                                                                                         & 示例           \\
         \midrule
-        ArabicDigit  & 阿拉伯数字 & \makecell*[c]{0, 1, 2, 3, 4,                \\ 5, 6, 7, 8, 9} & \makecell*[c]{0, 1, 2, 3, 4, \\ 5, 6, 7, 8, 9}         \\
-        MIXED\_SIGNS & 正负符号   & 正, +, 负, -                 & 1, 1, -1, -1 \\
+        \makecell*[c]{CHINESE \\ \_MIXED\_DIGITS \\ \_AND\_UNITS} & \makecell*[c]{中文阿拉伯\\数字混合类型} & \makecell*[c]{class \rightarrow MixedDigits + ChineseUnits; \\ class \rightarrow ArabicUnsignedInteger + ChineseUnits} & \makecell*[c]{3千4百\\八十六万} \\
         \bottomrule
     \end{tabular}
 \end{table}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{numeral_nonterminal.pdf}
+    \caption{部分数值类型非终止符号类图}
+    \label{fig:badge}
+\end{figure}
+
 
 \subsubsection{预处理过程}
 
@@ -95,13 +99,6 @@ S则为其实符号.
 语料，语料库中的每条数据应该以（文本，结果）的文本对的形式存储，语料库作为训练集以
 求得每个产生式的似然。产生式的似然将参与求得语法树整体概率的计算.
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=1\textwidth]{preprocess.png}
-    \caption{预处理过程}
-    \label{fig:badge}
-\end{figure}
-
 \subsubsection{分析树的构建}
 
 首先需要定义与时间表达式相关的终结符（terminal）和非终结符（non-terminals），终结
@@ -122,66 +119,20 @@ S则为其实符号.
 （production）最终将被简化为 CNF（Chomsky norm function）。同时我们需要向语料库中写入
 语料，语料库中的每条数据应该以（文本，结果）的文本对的形式存储，语料库作为训练集以
 求得每个产生式的似然。产生式的似然将参与求得语法树整体概率的计算
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=1\textwidth]{tree construction.png}
-    \caption{分析树构建过程}
-    \label{fig:badge}
-\end{figure}
-
-\subsubsection{分析树的构建}
 
 \subsubsection{冲突消解}
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{arabic.pdf}
+    \caption{系统功能模块图}
+    \label{fig:badge}
+\end{figure}
+
 如图 9，同一个时间表达式可能解析出多棵语法树，需要最终选择在总概率上为 top-k 的
 k 棵语法树，即总体概率最大的 k 棵树。解析树的整体概率为树上所有产生式概率的乘积，在
 本项目中将 k 的值设为 1，则最终的语法树的概率如下。S 表示识别到的时间表达式，Tree 为
 生成的解析树，n 为树中产生式的数量。
-如图 9，同一个时间表达式可能解析出多棵语法树，需要最终选择在总概率上为 top-k 的
-k 棵语法树，即总体概率最大的 k 棵树。解析树的整体概率为树上所有产生式概率的乘积，在
-本项目中将 k 的值设为 1，则最终的语法树的概率如下。S 表示识别到的时间表达式，Tree 为
-生成的解析树，n 为树中产生式的数量。
-如图 9，同一个时间表达式可能解析出多棵语法树，需要最终选择在总概率上为 top-k 的
-k 棵语法树，即总体概率最大的 k 棵树。解析树的整体概率为树上所有产生式概率的乘积，在
-本项目中将 k 的值设为 1，则最终的语法树的概率如下。S 表示识别到的时间表达式，Tree 为
-生成的解析树，n 为树中产生式的数量。
-如图 9，同一个时间表达式可能解析出多棵语法树，需要最终选择在总概率上为 top-k 的
-k 棵语法树，即总体概率最大的 k 棵树。解析树的整体概率为树上所有产生式概率的乘积，在
-本项目中将 k 的值设为 1，则最终的语法树的概率如下。S 表示识别到的时间表达式，Tree 为
-生成的解析树，n 为树中产生式的数量。
-
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=1\textwidth]{conflict resolution.png}
-    \caption{冲突消解}
-    \label{fig:badge}
-\end{figure}
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=1\textwidth]{example_1.jpg}
-    \caption{冲突示例}
-    \label{fig:badge}
-\end{figure}
-
-
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=1\textwidth]{10月三日.jpg}
-    \caption{3日作为时间段识别}
-    \label{fig:badge}
-\end{figure}
-
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=1\textwidth]{10月三日_datetime.png}
-    \caption{10月3日作为时间点识别}
-    \label{fig:badge}
-\end{figure}
 
 
 \subsection{中文时间表达式解析模块的设计与实现}
@@ -232,12 +183,6 @@ k 棵语法树，即总体概率最大的 k 棵树。解析树的整体概率为
 格式的时间段，如‘2019 年 3 月 2 日’，表达式最终计算的结果应该为‘Interval(start=2019-03-
 02T00:00:00, end=2019-03-03T00:00:00)’。
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=1\textwidth]{时间粒度概念.jpg}
-    \caption{时间粒度概念}
-\end{figure}
-
 \subsection{时间信息抽取系统分析与展示模块}
 
 \subsubsection{用户前端交互模块设计}
@@ -250,46 +195,41 @@ R代表的是一规则或者是产生式的结合, 对于每一个产生式, 其
 P($\beta$|A)可以理解为由终止符产生相应的表达式字符串的概率, 即该产生式的概率.
 S则为其实符号.
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=1\textwidth]{web流程.png}
-    \caption{前端交互流程图}
-\end{figure}
+其中部分与中文整数相关的终止符定义如下:
 
+\begin{table}[h]
+    \centering
+    \caption{部分中文整数终止符}
+    \begin{tabular}{*{4}{c}}
+        \toprule
+        类名                  & 描述                                                                         & 蕴含字符                       & 对应数字                          \\
+        \midrule
+        CHINESE\_DIGITS       & 简体中文数字                                                                 & \makecell*[c]{〇,一, 二,三,四,                                     \\ 五,六,七,八,九} & \makecell*[c]{0, 1, 2, 3, 4, \\ 5, 6, 7, 8, 9}         \\
+        CHINESE\_DIGITS\_TRAD & 繁体中文数字                                                                 & \makecell*[c]{零,壹,贰,叁,肆,                                      \\ 伍,陆,柒,捌,玖}  & \makecell*[c]{0, 1, 2, 3, 4, \\ 5, 6, 7, 8, 9}         \\
+        CHINESE\_UNITS        & \makecell*[c]{简体中文                                             数字单位} & \makecell*[c]{十, 百, 千,                                          \\ 万, 十万, 百万}     & \makecell*[c]{$10^1, 10^2, 10^3,$ \\ $10^4, 10^5, 10^6$} \\
+        CHINESE\_UNITS\_TRAD  & \makecell*[c]{繁体中文                                             数字单位} & 拾,佰,仟,萬,億                 & \makecell*[c]{$10^1, 10^2, 10^3,$ \\ $10^4, 10^8$}       \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+
+部分与阿拉伯整数相关的终止符相关的终止符定义如下
+
+\begin{table}[h]
+    \centering
+    \caption{部分中文整数终止符}
+    \begin{tabular}{*{4}{c}}
+        \toprule
+        类名         & 描述       & 蕴含字符                     & 对应数字     \\
+        \midrule
+        ArabicDigit  & 阿拉伯数字 & \makecell*[c]{0, 1, 2, 3, 4,                \\ 5, 6, 7, 8, 9} & \makecell*[c]{0, 1, 2, 3, 4, \\ 5, 6, 7, 8, 9}         \\
+        MIXED\_SIGNS & 正负符号   & 正, +, 负, -                 & 1, 1, -1, -1 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
 
 \subsubsection{MongoDB查询语言设计}
 
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=1\textwidth]{部分语料识别结果.jpg}
-    \caption{部分语料识别结果}
-\end{figure}
-
-在前文已经给出定义与时间表达式相关的终结符（terminal）和非终结符（non-terminals），终结
-符在文本匹配中类似于正则表达式，以确定时间表达式的区间（span）。非终结符则在最后对
-时间表达式抽象成的语法树中充当非叶结点。图 6 中由终结符和非终结符组成的产生式
-（production）最终将被简化为 CNF（Chomsky norm function）。同时我们需要向语料库中写入
-语料，语料库中的每条数据应该以（文本，结果）的文本对的形式存储，语料库作为训练集以
-求得每个产生式的似然。产生式的似然将参与求得语法树整体概率的计算.
-在前文已经给出定义与时间表达式相关的终结符（terminal）和非终结符（non-terminals），终结
-符在文本匹配中类似于正则表达式，以确定时间表达式的区间（span）。非终结符则在最后对
-时间表达式抽象成的语法树中充当非叶结点。图 6 中由终结符和非终结符组成的产生式
-（production）最终将被简化为 CNF（Chomsky norm function）。同时我们需要向语料库中写入
-语料，语料库中的每条数据应该以（文本，结果）的文本对的形式存储，语料库作为训练集以
-求得每个产生式的似然。产生式的似然将参与求得语法树整体概率的计算.
-在前文已经给出定义与时间表达式相关的终结符（terminal）和非终结符（non-terminals），终结
-符在文本匹配中类似于正则表达式，以确定时间表达式的区间（span）。非终结符则在最后对
-时间表达式抽象成的语法树中充当非叶结点。图 6 中由终结符和非终结符组成的产生式
-（production）最终将被简化为 CNF（Chomsky norm function）。同时我们需要向语料库中写入
-语料，语料库中的每条数据应该以（文本，结果）的文本对的形式存储，语料库作为训练集以
-求得每个产生式的似然。产生式的似然将参与求得语法树整体概率的计算.
-在前文已经给出定义与时间表达式相关的终结符（terminal）和非终结符（non-terminals），终结
-符在文本匹配中类似于正则表达式，以确定时间表达式的区间（span）。非终结符则在最后对
-时间表达式抽象成的语法树中充当非叶结点。图 6 中由终结符和非终结符组成的产生式
-（production）最终将被简化为 CNF（Chomsky norm function）。同时我们需要向语料库中写入
-语料，语料库中的每条数据应该以（文本，结果）的文本对的形式存储，语料库作为训练集以
-求得每个产生式的似然。产生式的似然将参与求得语法树整体概率的计算.
 在前文已经给出定义与时间表达式相关的终结符（terminal）和非终结符（non-terminals），终结
 符在文本匹配中类似于正则表达式，以确定时间表达式的区间（span）。非终结符则在最后对
 时间表达式抽象成的语法树中充当非叶结点。图 6 中由终结符和非终结符组成的产生式
@@ -320,42 +260,6 @@ S则为其实符号.
 
 
 
-如图 9，同一个时间表达式可能解析出多棵语法树，需要最终选择在总概率上为 top-k 的
-k 棵语法树，即总体概率最大的 k 棵树。解析树的整体概率为树上所有产生式概率的乘积，在
-本项目中将 k 的值设为 1，则最终的语法树的概率如下。S 表示识别到的时间表达式，Tree 为
-生成的解析树，n 为树中产生式的数量。
-如图 9，同一个时间表达式可能解析出多棵语法树，需要最终选择在总概率上为 top-k 的
-k 棵语法树，即总体概率最大的 k 棵树。解析树的整体概率为树上所有产生式概率的乘积，在
-本项目中将 k 的值设为 1，则最终的语法树的概率如下。S 表示识别到的时间表达式，Tree 为
-生成的解析树，n 为树中产生式的数量。
-如图 9，同一个时间表达式可能解析出多棵语法树，需要最终选择在总概率上为 top-k 的
-k 棵语法树，即总体概率最大的 k 棵树。解析树的整体概率为树上所有产生式概率的乘积，在
-本项目中将 k 的值设为 1，则最终的语法树的概率如下。S 表示识别到的时间表达式，Tree 为
-生成的解析树，n 为树中产生式的数量。
-如图 9，同一个时间表达式可能解析出多棵语法树，需要最终选择在总概率上为 top-k 的
-k 棵语法树，即总体概率最大的 k 棵树。解析树的整体概率为树上所有产生式概率的乘积，在
-本项目中将 k 的值设为 1，则最终的语法树的概率如下。S 表示识别到的时间表达式，Tree 为
-生成的解析树，n 为树中产生式的数量。
-如图 9，同一个时间表达式可能解析出多棵语法树，需要最终选择在总概率上为 top-k 的
-k 棵语法树，即总体概率最大的 k 棵树。解析树的整体概率为树上所有产生式概率的乘积，在
-本项目中将 k 的值设为 1，则最终的语法树的概率如下。S 表示识别到的时间表达式，Tree 为
-生成的解析树，n 为树中产生式的数量。
-如图 9，同一个时间表达式可能解析出多棵语法树，需要最终选择在总概率上为 top-k 的
-k 棵语法树，即总体概率最大的 k 棵树。解析树的整体概率为树上所有产生式概率的乘积，在
-本项目中将 k 的值设为 1，则最终的语法树的概率如下。S 表示识别到的时间表达式，Tree 为
-生成的解析树，n 为树中产生式的数量。
-如图 9，同一个时间表达式可能解析出多棵语法树，需要最终选择在总概率上为 top-k 的
-k 棵语法树，即总体概率最大的 k 棵树。解析树的整体概率为树上所有产生式概率的乘积，在
-本项目中将 k 的值设为 1，则最终的语法树的概率如下。S 表示识别到的时间表达式，Tree 为
-生成的解析树，n 为树中产生式的数量。
-如图 9，同一个时间表达式可能解析出多棵语法树，需要最终选择在总概率上为 top-k 的
-k 棵语法树，即总体概率最大的 k 棵树。解析树的整体概率为树上所有产生式概率的乘积，在
-本项目中将 k 的值设为 1，则最终的语法树的概率如下。S 表示识别到的时间表达式，Tree 为
-生成的解析树，n 为树中产生式的数量。
-如图 9，同一个时间表达式可能解析出多棵语法树，需要最终选择在总概率上为 top-k 的
-k 棵语法树，即总体概率最大的 k 棵树。解析树的整体概率为树上所有产生式概率的乘积，在
-本项目中将 k 的值设为 1，则最终的语法树的概率如下。S 表示识别到的时间表达式，Tree 为
-生成的解析树，n 为树中产生式的数量。
 如图 9，同一个时间表达式可能解析出多棵语法树，需要最终选择在总概率上为 top-k 的
 k 棵语法树，即总体概率最大的 k 棵树。解析树的整体概率为树上所有产生式概率的乘积，在
 本项目中将 k 的值设为 1，则最终的语法树的概率如下。S 表示识别到的时间表达式，Tree 为
