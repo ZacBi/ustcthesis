@@ -46,7 +46,16 @@
 最后则是命名实体识别（NER，named-entity recognition），识别句中的目标片段。
 直觉来说，时间信息抽取应该属于命名实体识别的一部分，但自2004年ACE\cite{doddington2004automatic}（Automatic content extraction）引入TERN（temporal expression recognition and normalization）任务后，时间信息抽取任务就逐渐从命名实体识别任务中独立出来。
 时间信息抽取任务的研究通常可以分为以下三种子任务：时间识别；时间归一化，将不同方式表述的时间表达式统一化为一种形式；时间标注，以标准形式表示时间并在文本中以适当形式标注。
-当下流行的标注格式是使用XML语言的TimeML\cite{pustejovsky2003timeml}格式。图1展示时间标注的完整过程。
+当下流行的标注格式是使用XML语言的TimeML\cite{pustejovsky2003timeml}格式。图~\ref{fig:tagging_pregress}展示时间标注的完整过程。
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{标注过程.pdf}
+    \caption{时间表达式标注过程}
+    \label{fig:tagging_pregress}
+\end{figure}
+
+
 
 完整的时间信息抽取过程常采用时间标注器（temporal tagger）完成，时间标注器依照基于规则（rule-based）或基于语法（grammar-based）的方法进行标注。
 标注器所使用规则或语法由领域专家手工撰写（hand-driven），编写或扩展规则或语法的代价较高，因为时间信息是高度依赖于语言特性，故解决方案为一类语言或一种领域单独设计时间标注器。
@@ -59,8 +68,27 @@
 但这两个语料库含有的时间信息种类不够全、样本数不够多，故中文时间信息语料通常采用与自标注数据混合的形式构建，造成可用时间标注器不多。
 \citet{mingli2005ctemp}最早探索使用语法的方式来识别和归一化时间表达式，并采用启发式的规则解决时间信息间的语义冲突。
 其后\citet{wu2005normalizing}采用机器学习的方式与采用语法的方式在同一评测数据集上比较并分析，发现对于中文时间信息抽取任务，基于机器学习方法不能达到与基于规则方法同样的效果。此后中文时间信息抽取多半采用规则的形式。
-FudanNLP\cite{qiu2013fudannlp}是最早可通用的采用规则的时间标注器之一，但非专门处理时间抽取的工具，可用性欠佳。\citet{li2014chinese}基于HeidelTime能够利用自动翻译和人工翻译结合的特性，将英语时间表达式自动翻译为中文并修正，在TempEval-3上取得较好表现。表1列出了近十年中文时间信息抽取的一些研究。
+FudanNLP\cite{qiu2013fudannlp}是最早可通用的采用规则的时间标注器之一，但非专门处理时间抽取的工具，可用性欠佳。\citet{li2014chinese}基于HeidelTime能够利用自动翻译和人工翻译结合的特性，将英语时间表达式自动翻译为中文并修正，在TempEval-3上取得较好表现。表~\ref{tab:research}列出了近十年中文时间信息抽取的一些研究。
 \citet{liu2016cmedtex}针对临床上对于中文时间信息的需要，同样开发出一套基于规则的信息抽取系统，在ACE 2005上表现好于HeidelTime。
+
+\begin{table}[h]
+    \centering
+    \caption{近十年中文时间信息抽取研究}
+    \begin{tabular}{*{4}{c}}
+        \toprule
+        研究      & 任务        & 抽取方式 & 语料集   \\
+        \midrule
+        Liu(2016) & 识别+归一化 & 规则     & 自有语料 \\
+        Liu(2015) & 识别+归一化 & 规则 & TempEval-2 \\
+        Angeli and Uszkoreit(2013) & 识别 & 规则+机器学习 & ACE 2005 \\
+        Wu(2010) & 识别 & 规则 & 自有语料 \\
+        Wen(2010) & 归一化 & 规则 & ACE 2005\\
+        He(2009) & 识别 & 规则+机器学习 & ACE 2005\\
+        \bottomrule
+    \end{tabular}
+    \label{tab:research}
+\end{table}
+
 
 \subsection{国外研究现状}
 
