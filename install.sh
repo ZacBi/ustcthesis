@@ -96,7 +96,7 @@ setup_ohmyzsh() {
   # precedence over umasks except for filesystems mounted with option "noacl".
   umask g-w,o-w
 
-  echo "${BLUE}Cloning Oh My Zsh...${RESET}"
+  echo "${BLUE}Cloning Oh My Zsh...$RESET"
 
   command_exists git || {
     fmt_error "git is not installed"
@@ -126,33 +126,33 @@ setup_zshrc() {
   # Keep most recent old .zshrc at .zshrc.pre-oh-my-zsh, and older ones
   # with datestamp of installation that moved them aside, so we never actually
   # destroy a user's original zshrc
-  echo "${BLUE}Looking for an existing zsh config...${RESET}"
+  echo "${BLUE}Looking for an existing zsh config...$RESET"
 
   # Must use this exact name so uninstall.sh can find it
   OLD_ZSHRC=~/.zshrc.pre-oh-my-zsh
   if [ -f ~/.zshrc ] || [ -h ~/.zshrc ]; then
     # Skip this if the user doesn't want to replace an existing .zshrc
     if [ "$KEEP_ZSHRC" = yes ]; then
-      echo "${YELLOW}Found ~/.zshrc.${RESET} ${GREEN}Keeping...${RESET}"
+      echo "${YELLOW}Found ~/.zshrc.$RESET ${GREEN}Keeping...$RESET"
       return
     fi
     if [ -e "$OLD_ZSHRC" ]; then
-      OLD_OLD_ZSHRC="${OLD_ZSHRC}-$(date +%Y-%m-%d_%H-%M-%S)"
+      OLD_OLD_ZSHRC="$OLD_ZSHRC-$(date +%Y-%m-%d_%H-%M-%S)"
       if [ -e "$OLD_OLD_ZSHRC" ]; then
-        fmt_error "$OLD_OLD_ZSHRC exists. Can't back up ${OLD_ZSHRC}"
+        fmt_error "$OLD_OLD_ZSHRC exists. Can't back up $OLD_ZSHRC"
         fmt_error "re-run the installer again in a couple of seconds"
         exit 1
       fi
-      mv "$OLD_ZSHRC" "${OLD_OLD_ZSHRC}"
+      mv "$OLD_ZSHRC" "$OLD_OLD_ZSHRC"
 
       echo "${YELLOW}Found old ~/.zshrc.pre-oh-my-zsh." \
-        "${GREEN}Backing up to ${OLD_OLD_ZSHRC}${RESET}"
+        "${GREEN}Backing up to $OLD_OLD_ZSHRC$RESET"
     fi
-    echo "${YELLOW}Found ~/.zshrc.${RESET} ${GREEN}Backing up to ${OLD_ZSHRC}${RESET}"
+    echo "${YELLOW}Found ~/.zshrc.$RESET ${GREEN}Backing up to $OLD_ZSHRC$RESET"
     mv ~/.zshrc "$OLD_ZSHRC"
   fi
 
-  echo "${GREEN}Using the Oh My Zsh template file and adding it to ~/.zshrc.${RESET}"
+  echo "${GREEN}Using the Oh My Zsh template file and adding it to ~/.zshrc.$RESET"
 
   sed "/^export ZSH=/ c\\
 export ZSH=\"$ZSH\"
@@ -182,7 +182,7 @@ EOF
     return
   fi
 
-  echo "${BLUE}Time to change your default shell to zsh:${RESET}"
+  echo "${BLUE}Time to change your default shell to zsh:$RESET"
 
   # Prompt for user choice on changing the default login shell
   printf '%sDo you want to change your default shell to zsh? [Y/n]%s ' \
@@ -214,8 +214,8 @@ EOF
     # Get the path to the right zsh binary
     # 1. Use the most preceding one based on $PATH, then check that it's in the shells file
     # 2. If that fails, get a zsh path from the shells file, then check it actually exists
-    if ! zsh=$(command -v zsh) || ! grep -qx "$zsh" "$shells_file"; then
-      if ! zsh=$(grep '^/.*/zsh$' "$shells_file" | tail -1) || [ ! -f "$zsh" ]; then
+    if ! zsh="$(command -v zsh)" || ! grep -qx "$zsh" "$shells_file"; then
+      if ! zsh="$(grep '^/.*/zsh$' "$shells_file" | tail -1)" || [ ! -f "$zsh" ]; then
         fmt_error "no zsh binary found or not present in '$shells_file'"
         fmt_error "change your default shell manually."
         return
@@ -235,7 +235,7 @@ EOF
     fmt_error "chsh command unsuccessful. Change your default shell manually."
   else
     export SHELL="$zsh"
-    echo "${GREEN}Shell successfully changed to '$zsh'.${RESET}"
+    echo "${GREEN}Shell successfully changed to '$zsh'.$RESET"
   fi
 
   echo
@@ -261,12 +261,12 @@ main() {
   setup_color
 
   if ! command_exists zsh; then
-    echo "${YELLOW}Zsh is not installed.${RESET} Please install zsh first."
+    echo "${YELLOW}Zsh is not installed.$RESET Please install zsh first."
     exit 1
   fi
 
   if [ -d "$ZSH" ]; then
-    echo "${YELLOW}The \$ZSH folder already exists ($ZSH).${RESET}"
+    echo "${YELLOW}The \$ZSH folder already exists ($ZSH).$RESET"
     if [ "$custom_zsh" = yes ]; then
       cat <<EOF
 
@@ -312,8 +312,8 @@ Before you scream Oh My Zsh! please look over the ~/.zshrc file to select plugin
 EOF
   printf %s "$RESET"
 
-  if [ $RUNZSH = no ]; then
-    echo "${YELLOW}Run zsh to try it out.${RESET}"
+  if [ "$RUNZSH" = no ]; then
+    echo "${YELLOW}Run zsh to try it out.$RESET"
     exit
   fi
 
