@@ -1,4 +1,5 @@
 # Changelog
+
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
@@ -10,7 +11,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - 同步新版《撰写手册》（2016 年 12 月版，2019 年 第 3 次印刷）（#291）。
 - 本科生的第一章开启于奇数页。
 - 按照新版《手册》的要求，目录中的二级标题使用仿宋体 12 磅（#316）。
-- `biblatex` 的参考文献表中题名改为转换成 sentence case（感谢 [@hushidong](https://github.com/hushidong)）（#315）。
+- `biblatex` 的参考文献表中题名改为转换成 sentence case（感谢
+  [@hushidong](https://github.com/hushidong)）（#315）。
 - 本科生的封面改为制本厂的格式（#301）。
 
 ### Fixed
@@ -30,7 +32,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - 添加软件工程专业的封面的格式的支持。
 - 新增 biblatex 的支持（#282）。
 - 新增数学符号风格选项 `math-style`。
-- 新增选项控制数学字体风格的细节：`uppercase-greek`、`less-than-or-equal`、`integral`、`integral-limits`、`partial`、`math-ellipsis` 和 `real-part`。
+- 新增选项控制数学字体风格的细节
+  ：`uppercase-greek`、`less-than-or-equal`、`integral`、`integral-limits`、`partial`、`math-ellipsis`
+  和 `real-part`。
 
 ### Changed
 
@@ -45,7 +49,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - 修正附录章节的编号。
 - 修正参考文献中期刊的页码前的空格（#264）。
 
-
 ## [v3.2.1] - 2020-04-03
 
 ### Added
@@ -54,7 +57,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Fixed
 
-- 修正 LaTeX3 的 `\str_if_eq_x` 已过时的报错 - [#241](https://github.com/ustctug/ustcthesis/issues/241)
+- 修正 LaTeX3 的 `\str_if_eq_x` 已过时的报错 -
+  [#241](https://github.com/ustctug/ustcthesis/issues/241)
 
 ### Removed
 
@@ -75,7 +79,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Fixed
 
-- 处理 `hyperref` 与 `unicode-math` 的兼容性问题 - [#223](https://github.com/ustctug/ustcthesis/issues/223)。
+- 处理 `hyperref` 与 `unicode-math` 的兼容性问题 -
+  [#223](https://github.com/ustctug/ustcthesis/issues/223)。
 
 ## [3.1.05] - 2019-04-21
 
@@ -94,7 +99,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Fixed
 
-- 修正英文模式下的 Unicode 引号字体 - [CTeX-org/ctex-kit#309](https://github.com/CTeX-org/ctex-kit/issues/389)。
+- 修正英文模式下的 Unicode 引号字体 -
+  [CTeX-org/ctex-kit#309](https://github.com/CTeX-org/ctex-kit/issues/389)。
 - 修正算法的格式。
 - 修正图表清单的格式。
 
@@ -227,7 +233,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - 更正范数命令失效的错误。
 - 更正 paragraph 的前后距离。
 
-
 ## [3.0] - 2017-07-01
 
 ### Added
@@ -249,7 +254,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - 优化图注、算法的行距。
 - 二级以下节标题编号下采用“1.”、“(1)”、“①”。
 
-[Unreleased]: https://github.com/ustctug/ustcthesis/compare/v3.3.0...HEAD
+[unreleased]: https://github.com/ustctug/ustcthesis/compare/v3.3.0...HEAD
 [v3.3.0]: https://github.com/ustctug/ustcthesis/compare/v3.2.1...v3.3.0
 [v3.2.1]: https://github.com/ustctug/ustcthesis/compare/v3.2...v3.2.1
 [3.1.06]: https://github.com/ustctug/ustcthesis/compare/v3.2...v3.1.06
