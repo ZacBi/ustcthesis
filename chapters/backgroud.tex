@@ -8,6 +8,7 @@
 其中A为非终止符, $\alpha$则是一组终止符,非终止符或空串组成的符号串。
 它与上下文相关语法的区别主要在于任何情况下左侧的单个非终结符都可以替换为右侧的符号串, 即无论非终结符的上下文是什么, 它的产生式规则可以被应用。
 
+
 形式语法本质上是一组产生式规则，描述给定形式语言中所有可能的字符串。产生式规则是简单的替换。例如这一条规则: $\displaystyle \langle {\text{Stmt}}\rangle \to \langle {\text{Id}}\rangle =\langle {\text{Expr}}\rangle$，
 可以用$\displaystyle \langle {\text{Stmt}}\rangle$ 取代 $\langle {\text{Id}}\rangle =\langle {\text{Expr}}\rangle$。
 
@@ -15,13 +16,16 @@
 非终结符符号在派生过程中使用，但不会出现在其最终结果字符串中。
 
 由上下文无关语法生成的语言称为上下文无关语言（CFL, Context-Free Language），不同的上下文无关语法可以生成相同的上下文无关语言。
+
 上下文无关语法起源于语言学，用于描述自然语言中句子和单词的结构，由语言学家诺姆·乔姆斯基发明。
 在计算机科学的早期应用中，语法被用来描述编程语言的结构。
 之后常作为可扩展标记语言（XML，Extensible Markup Language）的一个重要部分而被广泛应用，称为文档类型定义\cite{hopcroft2001introduction}。
 
+
 在语言学中，一些作者使用术语“短语结构语法”来指代上下文无关语法，因此短语结构语法不同于依赖语法。在计算机科学中，上下文无关语法的一种通用符号表示是Backus–Naur范式(BNF)。
 
 \subsection{概率无关上下文语法}
+
 
 模拟符号串的语法理论起源于计算语言学中理解自然语言结构的工作\cite{chomsky1956three,chomsky1959certain,lees1957syntactic}。
 概率上下文无关文法（PCFG，Probabilistic Context-Free Grammar）在计算语言学中引入近40年后被应用于RNA结构的概率建模等领域\cite{sakakibara1994stochastic}。
