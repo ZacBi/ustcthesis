@@ -36,7 +36,7 @@ save_config () {
 
 if [[ $# -eq 0 ]]; then
     for config in main crossref nomencl bibtex biblatex; do
-        save_config $config;
+        save_config "$config";
     done
 else
     case $1 in
