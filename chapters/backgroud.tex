@@ -4,9 +4,9 @@
 
 \section{上下文无关语法}
 
-在形式语言理论中，上下文无关语法（CFG）是一种形式语法，其产生式规则为形式: A \rightarrow $\alpha$。
-其中A为非终止符, $\alpha$则是一组终止符,非终止符或空串组成的符号串。
-它与上下文相关语法的区别主要在于任何情况下左侧的单个非终结符都可以替换为右侧的符号串, 即无论非终结符的上下文是什么, 它的产生式规则可以被应用。
+上下文无关语法（CFG）在形式语言理论中是一种形式语法，其产生式规则为形式: A \rightarrow $\alpha$。
+其中A为非终止符，$\alpha$则是由一组终止符，非终止符或空串组成的符号串。
+它与上下文相关语法的区别主要在于任何情况下左侧的单个非终结符都可以替换为右侧的符号串，即无论非终结符的上下文是什么，它的产生式规则可以被应用。
 
 形式语法本质上是一组产生式规则，描述给定形式语言中所有可能的字符串。产生式规则是简单的替换。例如这一条规则: $\displaystyle \langle {\text{Stmt}}\rangle \to \langle {\text{Id}}\rangle =\langle {\text{Expr}}\rangle$，
 可以用$\displaystyle \langle {\text{Stmt}}\rangle$ 取代 $\langle {\text{Id}}\rangle =\langle {\text{Expr}}\rangle$。
@@ -14,18 +14,18 @@
 给定的非终结符号可以有多个替换规则。语法生成的语言是所有终止符号字符串的集合，这些字符串可以通过重复的规则应用程序从某个特定的非终止符号（又称为起始符号）派生出来。
 非终结符符号在派生过程中使用，但不会出现在其最终结果字符串中。
 
-由上下文无关语法生成的语言称为上下文无关语言（CFL, Context-Free Language），不同的上下文无关语法可以生成相同的上下文无关语言。
+上下文无关语言（CFL，Context-Free Language）可由上下文无关语法生成，不同的上下文无关语法可以生成相同的上下文无关语言。
 
 上下文无关语法起源于语言学，用于描述自然语言中句子和单词的结构，由语言学家诺姆·乔姆斯基发明。
 在计算机科学的早期应用中，语法被用来描述编程语言的结构。
-之后常作为可扩展标记语言（XML，Extensible Markup Language）的一个重要部分而被广泛应用，称为文档类型定义\cite{hopcroft2001introduction}。
-
+之后常作为可扩展标记语言（XML，Extensible Markup Language）的一个重要部分而被广泛应用，
+称为文档类型定义\cite{hopcroft2001introduction}。
 
 在语言学中，一些作者使用术语“短语结构语法”来指代上下文无关语法，因此短语结构语法不同于依赖语法。在计算机科学中，上下文无关语法的一种通用符号表示是Backus–Naur范式(BNF)。
 
 \subsection{概率无关上下文语法}
 
-模拟符号串的语法理论起源于计算语言学中理解自然语言结构的工作\cite{chomsky1956three,chomsky1959certain,lees1957syntactic}。
+模拟符号串的语法理论起源于计算语言学中理解自然语言结构的工作\cite{chomsky1956three，chomsky1959certain，lees1957syntactic}。
 概率上下文无关文法（PCFG，Probabilistic Context-Free Grammar）在计算语言学中引入近40年后被应用于RNA结构的概率建模等领域\cite{sakakibara1994stochastic}。
 
 概率无关上下文语法扩展上下文无关语法的方式类似于隐马尔可夫模型扩展正则表达式语法的方式。
@@ -42,7 +42,7 @@
 
 在计算机科学中，Cocke–Younger–Kasami算法（也称为CYK，或CKY）是Itiroo Sakai\cite{mey1965international}于1961年发布的上下文无关语法解析算法，
 它采用自下而上的解析和动态规划。
-CYK的标准版本仅对以乔姆斯基范式（CNF, Chomsky Normal Form）给出的上下文无关语法进行操作。但是，任何上下文无关语法都可以（在约定之后）转换为表示相同语言的乔姆斯基范式语法。
+CYK的标准版本仅对以乔姆斯基范式（CNF，Chomsky Normal Form）给出的上下文无关语法进行操作。但是，任何上下文无关语法都可以（在约定之后）转换为表示相同语言的乔姆斯基范式语法。
 CYK算法的重要性源于它在某些情况下的高效性。使用大O表示法，CYK最坏情况下的运行时间是$\displaystyle \mathcal{O} (n^{3} \cdot |G|)$，其中n是解析字符串的长度，|G|是乔姆斯基范式语法G的大小.
 这使得它在最坏情况下的渐近复杂度方面成为最有效的解析算法之一，尽管在许多实际场景中存在其他算法具有更好的平均运行时间\cite{sipser1997context}。
 
@@ -83,13 +83,12 @@ SciKit-Learn框架中封装了大量的分类回归和聚类算法，其中就�
 然而，2006年与其他分类算法的综合比较表明，贝叶斯分类优于其他方法，比如茂密的树木或随机的森林。
 朴素贝叶斯的最大的优点是，它只需要少量的训练数据来估计分类所需的参数\cite{10.1145/1143844.1143865}。
 
-
 \section{MongoDB数据库}
 
 MongoDB是一个源代码可用的跨平台面向文档的数据库程序。
 MongoDB被归类为非关系型(NoSQL，Not-only SQL)数据库程序，它使用带有可选模式的类似JSON的文档。
 MongoDB由MongoDB Inc.开发，并根据服务器端公共许可证（SSPL）获得许可。
-MongoDB字段可能因文档而异, 即无需向系统声明文档的结构，因为MongoDB内部存储的文档是自描述的，
+MongoDB字段可能因文档而异，即无需向系统声明文档的结构，因为MongoDB内部存储的文档是自描述的，
 必要情况下也可以使用模式验证对每个集合实施强制的数据治理控制和字段校验。
 
 MongoDB和MySQL具有很大的不同\cite{Győrödi2015comparative}，MySQL是Oracle公司开发，典型的关系型数据库管理系统（RDBMS）。
