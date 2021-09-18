@@ -12,9 +12,9 @@
 
 中文时间表达式的识别和解析都是以概率无关上下文语法为核心算法实现的。
 对于中文时间表达式，涉及到两个比较关键的部分，一部分是对数字部分的识别，另一部分是对时间单元的识别，最后是有机的将这些识别规则组合到一起。
-概率无关上下文语法通常四元组的形式出现: (N，R，S， $\varSigma$)。 其中N代表的是非终止符号集合，$\varSigma$ 代表的是终止符号的集合，$\varSigma$。
+概率无关上下文语法通常四元组的形式出现: (N，R，S， $\varSigma$)。其中N代表的是非终止符号集合，$\varSigma$ 代表的是终止符号的集合，$\varSigma$。
 R代表的是一规则或者是产生式的结合，对于每一个产生式，其组成形式应该为 A $\rightarrow$ $\beta$[p]，其中A应该为一个非终止符，beta是一个包含0个或多个符号的字符串,
-字符串的形式应该为($\varSigma$ $\cup$ N)，即非终结符与终结符的交集中产生的字符串。 p则为一个介于0和1中间的数字，表示 P($\beta$|A)的概率。
+字符串的形式应该为($\varSigma$ $\cup$ N)，即非终结符与终结符的交集中产生的字符串。p则为一个介于0和1中间的数字，表示 P($\beta$|A)的概率。
 P($\beta$|A)可以理解为由终止符产生相应的表达式字符串的概率，即该产生式的概率。
 S则为起始符号。
 
@@ -43,7 +43,7 @@ S则为起始符号。
 
 数值类型终止符主要涉及到阿拉伯数字与中文数字的识别，出于使用场景的考虑，文字识别中并没有带上英文数字表示，那已经超过日常生产环境的使用范围。
 
-数值类型终止符主要通过继承TerminalSymbol类实现。 每一个继承该类的子类都为相应的终止符。 数值类型中比较核心的类有Comma，ArabicDigit，MixedSign，ChineseDigit，ChineseUnits。
+数值类型终止符主要通过继承TerminalSymbol类实现。每一个继承该类的子类都为相应的终止符。数值类型中比较核心的类有Comma，ArabicDigit，MixedSign，ChineseDigit，ChineseUnits。
 数值类型终止符相关类的类图可见图~\ref{fig:numeral_terminal}。
 如图中所示，每个终止符类中都包含一个RECOGNIZER字段，该字段对应RegexRecognizer类，此类为正则表达式的正则表达式解析器，可以将终止符定义的文字符号组织成正则表达式规则以解析我们需要处理的自然语言文本。
 以ArabicDigit类为例，其对应的文字符号将通过RegexRecognizer类的generate\_terminals方法组织成为 '$\left[ 0123456789 \right]$'的正则表达式形式，并通过Python语言底层的re模块，即正则表达式解析模块实例化为正则表达式类。
@@ -62,7 +62,7 @@ S则为起始符号。
 
 数值类型非终止符的主要实现类需要继承NonTerminalSymbol，如图~\ref{fig:numeral_nonterminal}所示。
 列举出来的一些NonTerminalSymbol的子类包括ChineseMixedDigitsAndUnits，MixedChineseArabicDigits，ArabicDigits，ChineseArabicDigit，MixedDigitOom等整数类型。
-浮点数，百分数等类就不一一列举出来。 每个继承类的内部会包含RULE字段，该字段主要作用在于方便在解析的过程中收集与之相关的产生式。 部分数值类型非终止符的产生式如表~\ref{tab:numeral_nonterminal}。
+浮点数，百分数等类就不一一列举出来。每个继承类的内部会包含RULE字段，该字段主要作用在于方便在解析的过程中收集与之相关的产生式。部分数值类型非终止符的产生式如表~\ref{tab:numeral_nonterminal}。
 
 数值类型非终止符起到的作用是集合或生成终止符或其他非终止符，和一般性的上下文无关语法不同，在中文时间表达式识别过程中，所有能够匹配给定文本中某一部分的规则,
 其所匹配到的信息都具有一定的价值，所以在组合规则的过程中，会自然的形成类似于抽象语法树的结构，会在树中结点贮存相关的文本信息。
@@ -72,7 +72,7 @@ S则为起始符号。
 为了和非终止符，也就是TerminalSymbol类做出区分。
 NonTerminalSymbol中存在REGISTRABLE\_THIS\_IS\_CONTAINER字段,
 将继承非终止符类的子类作为容器，装载一个或者多个产生式，不同的产生式将会按照
-produce\_index\_in\_rule的形式，由专门的python元类处理，表示不同的产生式。 如表~\ref{tab:numeral_nonterminal}中的MixedChineseArabicDigits类，因其关联到两个不同的产生式，所以其将分别
+produce\_index\_in\_rule的形式，由专门的python元类处理，表示不同的产生式。如表~\ref{tab:numeral_nonterminal}中的MixedChineseArabicDigits类，因其关联到两个不同的产生式，所以其将分别
 注入 produce\_0$\left(self，mixed\_digits，chinese\_units\right)$和produce\_1$\left(self，arabic\_unsigned\_integer，chinese\_units\right)$两个方法，方法中的参数为对应的产生式右侧的终止符或者非终止符。
 
 
@@ -139,7 +139,7 @@ produce\_index\_in\_rule的形式，由专门的python元类处理，表示不�
 \end{table}
 
 
-时间单元终止符的实现与数值类型终止符的实现大同小异，都需要继承TerminalSymbol类。 其部分类图如~\ref{fig:date_terminal}所示。
+时间单元终止符的实现与数值类型终止符的实现大同小异，都需要继承TerminalSymbol类。其部分类图如~\ref{fig:date_terminal}所示。
 其中比较典型的类有DurUnitHour，Quantifier，UnitWeek，UnitThisAdv，Event。
 
 
@@ -161,9 +161,8 @@ produce\_index\_in\_rule的形式，由专门的python元类处理，表示不�
 \subsubsection{时间单元非终止符的设计与实现}
 
 
-实现时间单元非终止符的具体实现类除了要继承NonTerminalSymbol类，还需要依赖与数值类型的终止符与非终止符。 部分实现类如下图~\ref{fig:date_nonterminal}所示。
+实现时间单元非终止符的具体实现类除了要继承NonTerminalSymbol类，还需要依赖与数值类型的终止符与非终止符。部分实现类如下图~\ref{fig:date_nonterminal}所示。
 时间单元非终止符的设计方式与时间单元终止符的设计思路保持一致，同样按照中文时间表达的多个时间维度(如小时，年月日等)，时间范围(一段时间)，关于时间的修饰符等进行规则设计和实现。
-
 
 \section{中文时间表达式解析模块的设计与实现}
 
@@ -196,7 +195,7 @@ produce\_index\_in\_rule的形式，由专门的python元类处理，表示不�
 分析树的构建过程如图~\ref{fig:tree_construction}所示，在获取产生式的似然和简化CFG产生式为CNF后，我们输入需要推理的文本（inference text），以识别文本中的时间表达式，并为识别出的时间表达式构建语法分析树。
 同一时间表达式可能存在不同的解析方式，即不同的解析树，我们利用产生式的似然与CKY算法（Cocke–Younger–Kasami algorithm）推导最终可能产生的零个或多个CNF解析树。分析树构建过程可见算法~\ref{algo:tree_construction}
 随后我们将CNF解析树还原为CFG解析树，以还原分析树的初始状态。此时，解析树中的非叶结点为上一小节中的非终结符，叶结点为终结符。图~\ref{algo:tree_construction}举例了一个时间表达式可能被解析成的一棵语法树。
-左边分析树识别时间段（period），三日（3 days），右边分析树识别日期（date）十月三日（October 3rd），识别区间存在交集。 分析树构建过程中，会调用树中各个结点的get\_result方法，将结点作为可加和性质的元素进行计算。 图
+左边分析树识别时间段（period），三日（3 days），右边分析树识别日期（date）十月三日（October 3rd），识别区间存在交集。分析树构建过程中，会调用树中各个结点的get\_result方法，将结点作为可加和性质的元素进行计算。
 图~\ref{fig:tree_construction}中结点所含有的值即为分析树构建过程中的计算结果。
 
 
@@ -342,7 +341,7 @@ Metis 指的是将模块组装成机器人并运行的平台，module 指 metis 
 Metis 中，包括输入模块、输出模块在内的所有流程都是模块化的，每个模块都有对应的 inputs、outputs 和 options。文档分类模块旨在判断文档类型属于电子版或图片版，判断逻辑影响输出 outputs，
 不同的输出会分别作为 PDF 页面分割模块和 OCR 识别模块的输入 inputs，而PDF 分割页面模块中的循环逻辑则由模块内 options 决定。整个流程是线性执行的，而每个模块的输出都可以连接到结果展示模块，以方便用户预览和下载数据。
 
-将若干测试数据输入对应的UI测试页面，可以得到相应的结果，其结果如图~\ref{fig:web_result}所示。 其中OPERATORROOT即为上文中提到的操纵符作为根节点识别到的结果，TIMEROOT则是文本作为准确的时间刻度识别到的文本。
+将若干测试数据输入对应的UI测试页面，可以得到相应的结果，其结果如图~\ref{fig:web_result}所示。其中OPERATORROOT即为上文中提到的操纵符作为根节点识别到的结果，TIMEROOT则是文本作为准确的时间刻度识别到的文本。
 
 
 \begin{figure}[h]
@@ -356,7 +355,7 @@ Metis 中，包括输入模块、输出模块在内的所有流程都是模块�
 \section{时间信息抽取系统分析结果与语料存取模块}
 
 
-时间信息抽取系统分析结果与语料存取模块主要是将用户传入的数据以及解析后的结果记录在MongoDB中，用户传入的数据首先会在内存中转换为Json形式，再通过序列化的方式传入MongoDB中进行持久化操作。 
+时间信息抽取系统分析结果与语料存取模块主要是将用户传入的数据以及解析后的结果记录在MongoDB中，用户传入的数据首先会在内存中转换为Json形式，再通过序列化的方式传入MongoDB中进行持久化操作。
 当前时间信息抽取系统分析结果与语料存取模块包含将Json文件导入数据库、数据完整性校验、数据分表存储、数据表索引加速等功能。数据持久化的工作流程如图所示。
 
 
