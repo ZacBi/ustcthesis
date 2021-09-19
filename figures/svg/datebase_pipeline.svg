@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="271px"
+   height="401px"
+   viewBox="-0.5 -0.5 271 401"
+   content="&lt;mxfile host=&quot;Electron&quot; modified=&quot;2021-09-18T20:27:38.681Z&quot; agent=&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/15.2.7 Chrome/93.0.4577.63 Electron/14.0.1 Safari/537.36&quot; etag=&quot;Ve6I4pnLDuYyvTDVBGdB&quot; version=&quot;15.2.7&quot; type=&quot;device&quot;&gt;&lt;diagram id=&quot;dDPzNShVRNH9cPpfi_1M&quot; name=&quot;第 1 页&quot;&gt;7Vrbcts2EP0aPKbD++WRlKh0JslMW3XS5hERYZENRDAkZEn9+mJBQCRM2WEa27Qy9ngs4AAgwd09B8uVkbvYHd82uC4+sJxQ5Fj5EblL5Di2FQXiA5BTh8SBArZNmatJPbAu/yV6pUL3ZU5aYyJnjPKyNsENqyqy4QaGm4YdzGk3jJp3rfGWjID1BtMx+leZ86JDIyfs8V9JuS30ne0g7kZ2WE9WT9IWOGeHAeRmyF00jPGutTsuCAXjabt061b3jJ431pCKT1lQfny3Cn7/Y9MuN39mq4+7rLbbN+oqLT/pBya5eH7VZQ0v2JZVmGY9mjZsX+UErmqJXj/nPWO1AG0B/kM4Pyln4j1nAir4jqpRciz537D8F1/1Pg1Glkd1Zdk56U7Fm9NgEXQ/Dcf6ZbKn192wiq/wrqQArMvdel8pVG3P7i7Y2QEe/l7zaluxfbMhD9jUUWGKmy3hD8zzzkEg2EPYjoh9i3UNoZiXt+Y+sArj7Xle72nRUM7+DserTd5iuld3GkcCpYJl4HERujWAOdt/piQ74wOf5rgtzjFxKEpO2hpLMx2EMAgMt3XHz5vyCBO/0zO3pOHk+LBvxrZUC5xAcVCLkOoeekbrGcWAzBp7dOO7r6x7dNZ5E1nnBD9IO7X0N1aKLfYhFpsh5lq+eYluY2rVnfg5b+P/h5Q35nPmoyhBiYWyCKVL8fuBVVu2FEYPqLBQ+rkxYjD4uoejSHrpTSvdlIgJ4Kn62A+L1lZ+ZgGKfZRa0IiWKMnghmmCYhdlMYp8ALMQ7iyG7sa7Gc1SL9amXgwi9zmVwjPdeM5DBlJhWxe0wnsqrXCu5oie46gNprLeuuz2x2Z9fIf13RM8GevtC6f2XMFhPRgc950k9ss7SWx3YlDZ/pwZnN6mIfmXNFn8jRZ6yJNDFkpCaIjDIbFBrpME5lyLSnu2STvPn1ulbe+ViI9PRH8qEcNZiehPJKJKjkRmFKEogOQoEomSJKLAIV3yIF2Kr5eIbjg3EV1rZLxXIv4wEcOpaVY0KxHDSUSM4MxLIvly4qFEviilC5jWUTNOJZICX6+ViJdKHM98IkZjZ9xfYRpYTRebSJWvOeYwelNSumCUNXKZa8kfmMob9oVcGnlO07svq7jk+HMqoD3Uv7MafksBjdpSL4cvRwF1Ef/bqYg7pwLqbRoKGKLYQ/FKKqBQNwvUTSDJSuYbEbwNdK8CkIpEgOsvba5A+O4WbOZ/FdA1CcMHwsoZSkN5wqxQHAyyQHFAZdIrIZw5kCB2yEI7LBgW7HTxbXzBzpeJbCxk2S8AHJzqydPsep3qunM71X1BVbifJq10oqmiOmta6VzIZC4XWlbAPGCkaPtj1ur6+7Am0ynytRBzlGY+YXlcdPsvx7uCaf8vBm72Hw==&lt;/diagram&gt;&lt;/mxfile&gt;"
+   id="svg180585"
+   sodipodi:docname="datebase_pipeline.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <sodipodi:namedview
+     id="namedview180587"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.8778055"
+     inkscape:cx="135.26428"
+     inkscape:cy="200.76627"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="1072"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g180575" />
+  <defs
+     id="defs180477" />
+  <g
+     id="g180575">
+    <path
+       d="M 50 60 L 50 113.63"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path180479" />
+    <path
+       d="M 50 118.88 L 46.5 111.88 L 50 113.63 L 53.5 111.88 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path180481" />
+    <ellipse
+       cx="50"
+       cy="30"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="ellipse180483"
+       ry="30"
+       rx="30" />
+    <ellipse
+       cx="50"
+       cy="30"
+       fill="none"
+       stroke="#000000"
+       pointer-events="all"
+       id="ellipse180485"
+       ry="26"
+       rx="26" />
+    <path
+       d="M 50 160 L 50 233.63"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path180487" />
+    <path
+       d="M 50 238.88 L 46.5 231.88 L 50 233.63 L 53.5 231.88 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path180489" />
+    <rect
+       x="0"
+       y="120"
+       width="100"
+       height="40"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect180491" />
+    <g
+       transform="translate(0.56507304,-4.7602922)"
+       id="g180497">
+      <switch
+         id="switch180495">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 98px; height: 1px; padding-top: 140px; margin-left: 1px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 10.5px; font-family: SimSun; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">加载MongoDB<xhtml:br
+   style="font-size: 10.5px" />
+数据库配置</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="50"
+           y="143"
+           fill="#000000"
+           font-family="SimSun"
+           font-size="11px"
+           text-anchor="middle"
+           id="text180493"
+           style="-inkscape-font-specification:'SimSun, Normal';font-family:SimSun;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:14px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle;fill:#000000"><tspan
+             sodipodi:role="line"
+             id="tspan184505"
+             x="50"
+             y="143">加载MongoDB</tspan><tspan
+             sodipodi:role="line"
+             id="tspan184507"
+             x="50"
+             y="156.75">配置文件</tspan></text>
+      </switch>
+    </g>
+    <path
+       d="M 50 280 L 50 353.63"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path180499" />
+    <path
+       d="M 50 358.88 L 46.5 351.88 L 50 353.63 L 53.5 351.88 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path180501" />
+    <path
+       d="M 220 360 L 220 326.37"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path180503" />
+    <path
+       d="M 220 321.12 L 223.5 328.12 L 220 326.37 L 216.5 328.12 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path180505" />
+    <rect
+       x="170"
+       y="360"
+       width="100"
+       height="40"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect180507" />
+    <g
+       transform="translate(-0.5 -0.5)"
+       id="g180513">
+      <switch
+         id="switch180511">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 98px; height: 1px; padding-top: 380px; margin-left: 171px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 10.5px; font-family: SimSun; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">数据完整性校验</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="220"
+           y="383"
+           fill="#000000"
+           font-family="SimSun"
+           font-size="11px"
+           text-anchor="middle"
+           id="text180509"
+           style="font-size:11px;font-family:SimSun;text-anchor:middle;fill:#000000"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:SimSun;-inkscape-font-specification:'SimSun, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+             id="tspan202641">数据完整性校验</tspan></text>
+      </switch>
+    </g>
+    <path
+       d="M 220 280 L 220 246.37"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path180515" />
+    <path
+       d="M 220 241.12 L 223.5 248.12 L 220 246.37 L 216.5 248.12 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path180517" />
+    <rect
+       x="170"
+       y="280"
+       width="100"
+       height="40"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect180519" />
+    <g
+       transform="translate(-0.5 -0.5)"
+       id="g180525">
+      <switch
+         id="switch180523">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 98px; height: 1px; padding-top: 300px; margin-left: 171px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 10.5px; font-family: SimSun; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">数据库分片操作</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="220"
+           y="303"
+           fill="#000000"
+           font-family="SimSun"
+           font-size="11px"
+           text-anchor="middle"
+           id="text180521"
+           style="font-size:11px;font-family:SimSun;text-anchor:middle;fill:#000000"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:SimSun;-inkscape-font-specification:'SimSun, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+             id="tspan201271">数据库分片操作</tspan></text>
+      </switch>
+    </g>
+    <path
+       d="M 220 200 L 220 166.37"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path180527" />
+    <path
+       d="M 220 161.12 L 223.5 168.12 L 220 166.37 L 216.5 168.12 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path180529" />
+    <rect
+       x="170"
+       y="200"
+       width="100"
+       height="40"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect180531" />
+    <g
+       transform="translate(-0.5 -0.5)"
+       id="g180537">
+      <switch
+         id="switch180535">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 98px; height: 1px; padding-top: 220px; margin-left: 171px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 10.5px; font-family: SimSun; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">数据表索引创建</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="220"
+           y="223"
+           fill="#000000"
+           font-family="SimSun"
+           font-size="11px"
+           text-anchor="middle"
+           id="text180533"
+           style="font-size:11px;font-family:SimSun;text-anchor:middle;fill:#000000"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:SimSun;-inkscape-font-specification:'SimSun, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+             id="tspan199505">数据表索引创建</tspan></text>
+      </switch>
+    </g>
+    <ellipse
+       cx="220"
+       cy="30"
+       fill="#000000"
+       stroke="#000000"
+       pointer-events="all"
+       id="ellipse180539"
+       ry="26"
+       rx="26" />
+    <ellipse
+       cx="220"
+       cy="30"
+       fill="none"
+       stroke="#000000"
+       pointer-events="all"
+       id="ellipse180541"
+       ry="30"
+       rx="30" />
+    <path
+       d="M 100 380 L 163.63 380"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path180543" />
+    <path
+       d="M 168.88 380 L 161.88 383.5 L 163.63 380 L 161.88 376.5 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path180545" />
+    <rect
+       x="0"
+       y="360"
+       width="100"
+       height="40"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect180547" />
+    <g
+       transform="translate(-0.5 -0.5)"
+       id="g180553">
+      <switch
+         id="switch180551">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 98px; height: 1px; padding-top: 380px; margin-left: 1px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 10.5px; font-family: SimSun; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">生成唯一标识</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="50"
+           y="383"
+           fill="#000000"
+           font-family="SimSun"
+           font-size="11px"
+           text-anchor="middle"
+           id="text180549"
+           style="font-size:11px;font-family:SimSun;text-anchor:middle;fill:#000000"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:SimSun;-inkscape-font-specification:'SimSun, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+             id="tspan204101">生成唯一标识</tspan></text>
+      </switch>
+    </g>
+    <rect
+       x="0"
+       y="240"
+       width="100"
+       height="40"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect180555" />
+    <g
+       transform="translate(-0.5,-4.2277556)"
+       id="g180561">
+      <switch
+         id="switch180559">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 98px; height: 1px; padding-top: 260px; margin-left: 1px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 10.5px; font-family: SimSun; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">获取分析结果或<xhtml:br />
+获取上传文件</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="50"
+           y="263"
+           fill="#000000"
+           font-family="SimSun"
+           font-size="11px"
+           text-anchor="middle"
+           id="text180557"
+           style="font-size:11px;font-family:SimSun;text-anchor:middle;fill:#000000"><tspan
+             sodipodi:role="line"
+             id="tspan186197"
+             x="50"
+             y="263"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:SimSun;-inkscape-font-specification:'SimSun, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">获取分析结果</tspan><tspan
+             sodipodi:role="line"
+             id="tspan186199"
+             x="50"
+             y="280.5"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:SimSun;-inkscape-font-specification:'SimSun, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">或获取上传文件</tspan></text>
+      </switch>
+    </g>
+    <path
+       d="M 220 120 L 220 66.37"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path180563" />
+    <path
+       d="M 220 61.12 L 223.5 68.12 L 220 66.37 L 216.5 68.12 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path180565" />
+    <rect
+       x="170"
+       y="120"
+       width="100"
+       height="40"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect180567" />
+    <g
+       transform="translate(-0.5,-5.2928287)"
+       id="g180573">
+      <switch
+         id="switch180571">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 98px; height: 1px; padding-top: 140px; margin-left: 171px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 10.5px; font-family: SimSun; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">数据导入<xhtml:br />
+MongoDB完成</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="220"
+           y="143"
+           fill="#000000"
+           font-family="SimSun"
+           font-size="11px"
+           text-anchor="middle"
+           id="text180569"
+           style="font-size:11px;font-family:SimSun;text-anchor:middle;fill:#000000"><tspan
+             sodipodi:role="line"
+             id="tspan191151"
+             x="220"
+             y="143"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:SimSun;-inkscape-font-specification:'SimSun, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">数据导入</tspan><tspan
+             sodipodi:role="line"
+             id="tspan191153"
+             x="220"
+             y="160.5"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:SimSun;-inkscape-font-specification:'SimSun, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">MongoDB完成</tspan></text>
+      </switch>
+    </g>
+  </g>
+  <switch
+     id="switch180583">
+    <g
+       requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+       id="g180577" />
+    <a
+       transform="translate(0,-5)"
+       xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems"
+       target="_blank"
+       id="a180581">
+      <text
+         text-anchor="middle"
+         font-size="10px"
+         x="50%"
+         y="100%"
+         id="text180579">Viewer does not support full SVG 1.1</text>
+    </a>
+  </switch>
+</svg>

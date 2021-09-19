@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="621px"
+   height="301px"
+   viewBox="-0.5 -0.5 621 301"
+   content="&lt;mxfile host=&quot;Electron&quot; modified=&quot;2021-09-19T01:46:26.636Z&quot; agent=&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/15.2.7 Chrome/93.0.4577.63 Electron/14.0.1 Safari/537.36&quot; etag=&quot;TTJmMup_N_GirqQYVGE9&quot; version=&quot;15.2.7&quot; type=&quot;device&quot;&gt;&lt;diagram id=&quot;kgpKYQtTHZ0yAKxKKP6v&quot; name=&quot;Page-1&quot;&gt;7Vpbc6M2FP41ekyG++URbJzONJ1kNp3Zbt+wUWy6GFGME7u/vkdC4irb2InZbJtMZoIOQoC+y9ERQfpkvbvLw2z1G4lwgjQl2iF9ijRNVRwL/tDIvoy4Fg8s8zjinerAU/wPFlfy6DaO8KbVsSAkKeKsHVyQNMWLohUL85y8trs9k6R91yxc4l7gaREm/ejXOCpWZdQxlTr+C46XK3FnVeFn1qHozAObVRiR10ZID5A+yQkpyqP1boITOnliXsrrZgfOVg+W47QYcoGebv3ZLncX+3slSx++/q6Fdzd8lJcw2fIXRoGJHBc5UxTYyPORN0OBizwV+SY9cKfI0/gLFXsxS/BuGT3crpP7+BkncQotP8N5vMYFzuFMwsOPdcwHzIoQYvS8ytpJEmabeM6GVSCS48U238Qv+AvelNRgUbJNIxzxVjWvrFHk5HuFFB30GW4yC9dxwggIL+cFyPFRYCB/ilyd9+DEUw1o9ydWzBLOC7xrhPhE32ECr5TvoUvFe7O8hLPe4Rx4rSlUEWXVoI8ugiGn7bIaukYWDji4ZwCt9YHugpiROC3YfU0fmdMOgCQvVmRJ0jBpQjg6FEdZPBgfow2PLYOnj47qXgsdXSJDG7kG8hwUWMhxkG+jwKFipAcW8lXk9BGkExCDd3lJvEwhNCdFQdYMizAvPGqHFEm4DcRwGonIPCGL76Ibn3/nx+MJT7PEx/rxGcBRy8P7qOc4CQtwkXZ2kIDIL32kSqjZcqPK6SJG2JBtvsD8og4Tqqe4nBxmjxwPky+UBEAO8GWYdzBl1/405ROir1z4w5iy9V82ZfNcfIwBObOPTleM7waOcxqcg34r8VaYrHz/B4eBNb6NrpXSqE4b6knjtcYxXs1uU0K1rua89tPjX79GLw/Zn046sYvs6WE3kS2a6LRPkKfQbOwHdP7BiF1I0TY75SPf6tGETtN9OMc0666KdcKBDTlrFgAT022XTus4iugY4LhgtGHtwH1TuJQkPXVWlRS/Harql5OCd46q+0a51Vpgiiz/Ro4YnUE7A5Dn5w2+Cjlka7aKCnAALJmw0klDjsEgMdgBrOsUBGUxzdsuzeH/g7wtoVnPng7nBeMH5m0p9MZPnLdPQHGY6kPztipWyyMkbunT2hJhgtZ86td0c0NHzozZ95Qp1KJ7HZ5MvD0fr7P6Igk3m3jRNvRLIemk0TcDAlar6JreRqUPiikBRcTeXDEpB0hxInP3RjKV4+OUS5Uj41w/EfTrM1acAal0xjeH+nxZvJe2DxHP//T/of5vKR/N/3/muu0S/zfP8n9j4G6aei14JJXbWSuzj+v7x4GQ+b7WB2NU3zeGVWwnfb87zgfwffcy39esBCbdn+ctkll/b+mHIMaUm9KePeigGtmO8UWch6Ml+wvj+S6tNimjHVaRQkThjKY7xgqnohtQajsBi9h069j3R+D4gQ2PW9vWRWC6a56e7puthjGy4Jsk0976OObpza2Pw/0OSpAqUHzhFCWpOa4EtU66NC6VYKfsqkrtExIEGoX7RjeeCfsP3NnU6T1G5761ess7jK53VbId9Jn2BUzWsKzfJeO7JX1VUpRTI/TEZt2U/kLWd0z+cZvWf8GQ7bsrWuOt0TZH1zYvMUe8i4tyPI236HB0PaCZPFAPRxv7RmNspxU6Omm1Zcejyx3F6uz/SRafVzRbXa6Bs522s2jSDEgjbv1jva/x1os12dMfeshud9f9ILasSIQPep/R7+flxg9dAfXrb5vqnW/gB7QqOFf4QnXqrdpQHYhYs88WXRRuViwHvNFR1I6fKBf5yQALkHxSGrquOvzp6di6SlPcttSFj4wjdaOzrDK75etQsat2eyBdLCNGKW2gWf/LWdm9/sc9PfgX&lt;/diagram&gt;&lt;/mxfile&gt;"
+   id="svg270615"
+   sodipodi:docname="recog_sequence.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <sodipodi:namedview
+     id="namedview270617"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.8792271"
+     inkscape:cx="310.23393"
+     inkscape:cy="150.59383"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="1072"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg270615" />
+  <defs
+     id="defs270489" />
+  <g
+     id="g270605">
+    <rect
+       x="25"
+       y="0"
+       width="100"
+       height="40"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect270491" />
+    <path
+       d="M 75 40 L 75 300"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       stroke-dasharray="3 3"
+       pointer-events="all"
+       id="path270493" />
+    <g
+       fill="#000000"
+       font-family="宋体"
+       text-anchor="middle"
+       font-size="14px"
+       id="g270497">
+      <text
+         x="74.5"
+         y="25.5"
+         id="text270495">前端页面</text>
+    </g>
+    <rect
+       x="70"
+       y="70"
+       width="10"
+       height="190"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect270499" />
+    <path
+       d="M 14 70 L 61.88 70"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path270501" />
+    <ellipse
+       cx="10"
+       cy="70"
+       fill="#000000"
+       stroke="#000000"
+       pointer-events="all"
+       id="ellipse270503"
+       ry="4"
+       rx="4" />
+    <path
+       d="M 68.88 70 L 61.88 73.5 L 61.88 66.5 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path270505" />
+    <g
+       fill="#000000"
+       font-family="宋体"
+       text-anchor="middle"
+       font-size="14px"
+       id="g270511">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="12"
+         y="52"
+         width="58"
+         height="17"
+         stroke-width="0"
+         id="rect270507" />
+      <text
+         x="39.5"
+         y="64.5"
+         id="text270509">用户请求</text>
+    </g>
+    <rect
+       x="200"
+       y="0"
+       width="100"
+       height="40"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect270513" />
+    <path
+       d="M 250 40 L 250 300"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       stroke-dasharray="3 3"
+       pointer-events="all"
+       id="path270515" />
+    <g
+       fill="#000000"
+       font-family="宋体"
+       text-anchor="middle"
+       font-size="14px"
+       id="g270519">
+      <text
+         x="249.5"
+         y="25.5"
+         id="text270517">OCR模块</text>
+    </g>
+    <rect
+       x="245"
+       y="80"
+       width="10"
+       height="70"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect270521" />
+    <path
+       d="M 80 80 L 236.88 80"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path270523" />
+    <path
+       d="M 243.88 80 L 236.88 83.5 L 236.88 76.5 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path270525" />
+    <g
+       transform="translate(-0.5 -0.5)"
+       id="g270531">
+      <switch
+         id="switch270529">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 71px; margin-left: 151px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 14px; font-family: 宋体; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; background-color: rgb(255, 255, 255); white-space: nowrap;">传输文件</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="151"
+           y="75"
+           fill="#000000"
+           font-family="宋体"
+           font-size="14px"
+           text-anchor="middle"
+           id="text270527">传输文件</text>
+      </switch>
+    </g>
+    <rect
+       x="360"
+       y="0"
+       width="100"
+       height="40"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect270533" />
+    <path
+       d="M 410 40 L 410 300"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       stroke-dasharray="3 3"
+       pointer-events="all"
+       id="path270535" />
+    <g
+       fill="#000000"
+       font-family="宋体"
+       text-anchor="middle"
+       font-size="14px"
+       id="g270539">
+      <text
+         x="409.5"
+         y="25.5"
+         id="text270537">文本预处理器</text>
+    </g>
+    <rect
+       x="405"
+       y="115"
+       width="10"
+       height="70"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect270541" />
+    <path
+       d="M 255 115 L 403.63 115"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path270543" />
+    <path
+       d="M 408.88 115 L 401.88 118.5 L 403.63 115 L 401.88 111.5 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path270545" />
+    <g
+       transform="translate(-0.5 -0.5)"
+       id="g270551">
+      <switch
+         id="switch270549">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 100px; margin-left: 330px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 14px; font-family: 宋体; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; background-color: rgb(255, 255, 255); white-space: nowrap;">图像转换文本</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="330"
+           y="104"
+           fill="#000000"
+           font-family="宋体"
+           font-size="14px"
+           text-anchor="middle"
+           id="text270547">图像转换文本</text>
+      </switch>
+    </g>
+    <rect
+       x="520"
+       y="0"
+       width="100"
+       height="40"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect270553" />
+    <path
+       d="M 570 40 L 570 300"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       stroke-dasharray="3 3"
+       pointer-events="all"
+       id="path270555" />
+    <g
+       fill="#000000"
+       font-family="宋体"
+       text-anchor="middle"
+       font-size="14px"
+       id="g270559">
+      <text
+         x="569.5"
+         y="25.5"
+         id="text270557">正则识别器</text>
+    </g>
+    <rect
+       x="565"
+       y="140"
+       width="10"
+       height="110"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect270561" />
+    <path
+       d="M 415 140 L 563.63 140"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path270563" />
+    <path
+       d="M 568.88 140 L 561.88 143.5 L 563.63 140 L 561.88 136.5 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path270565" />
+    <g
+       transform="translate(-0.5 -0.5)"
+       id="g270571">
+      <switch
+         id="switch270569">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 120px; margin-left: 490px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 14px; font-family: 宋体; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; background-color: rgb(255, 255, 255); white-space: nowrap;">文本预处理</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="490"
+           y="124"
+           fill="#000000"
+           font-family="宋体"
+           font-size="14px"
+           text-anchor="middle"
+           id="text270567">文本预处理</text>
+      </switch>
+    </g>
+    <path
+       d="M 565 160 L 530 160 Q 520 160 520 170 L 520 214 Q 520 224 530 224.23 L 558.63 224.88"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path270573" />
+    <path
+       d="M 563.88 225 L 556.8 228.34 L 558.63 224.88 L 556.96 221.35 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path270575" />
+    <g
+       transform="translate(-0.5 -0.5)"
+       id="g270581">
+      <switch
+         id="switch270579">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 195px; margin-left: 470px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 14px; font-family: 宋体; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; background-color: rgb(255, 255, 255); white-space: nowrap;">正则识别<xhtml:br
+   style="font-size: 14px" />
+并映射到实现类</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="476.38559"
+           y="189.95372"
+           fill="#000000"
+           font-family="'宋体'"
+           font-size="14px"
+           text-anchor="middle"
+           id="text270577"><tspan
+             sodipodi:role="line"
+             id="tspan272015"
+             x="476.38559"
+             y="189.95372">正则识别并</tspan><tspan
+             sodipodi:role="line"
+             id="tspan272017"
+             x="476.38559"
+             y="207.45372">映射到实现类</tspan></text>
+      </switch>
+    </g>
+    <rect
+       x="565"
+       y="60"
+       width="10"
+       height="40"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect270583" />
+    <path
+       d="M 567 59 L 520 59.82 Q 510 60 510 70 L 510 89 Q 510 99 520 99 L 562.63 99"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path270585" />
+    <path
+       d="M 567.88 99 L 560.88 102.5 L 562.63 99 L 560.88 95.5 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path270587" />
+    <g
+       transform="translate(-0.5 -0.5)"
+       id="g270593">
+      <switch
+         id="switch270591">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 80px; margin-left: 470px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 14px; font-family: 宋体; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; background-color: rgb(255, 255, 255); white-space: nowrap;">加载配置文件</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="470"
+           y="84"
+           fill="#000000"
+           font-family="宋体"
+           font-size="14px"
+           text-anchor="middle"
+           id="text270589">加载配置文件</text>
+      </switch>
+    </g>
+    <path
+       d="M 576 241.97 L 86.37 241.95"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       stroke-dasharray="3 3"
+       pointer-events="stroke"
+       id="path270595" />
+    <path
+       d="M 81.12 241.95 L 88.12 238.45 L 86.37 241.95 L 88.12 245.45 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path270597" />
+    <g
+       transform="translate(-0.5 -0.5)"
+       id="g270603">
+      <switch
+         id="switch270601">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 230px; margin-left: 323px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 14px; font-family: 宋体; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; background-color: rgb(255, 255, 255); white-space: nowrap;">返回识别结果</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="323"
+           y="234"
+           fill="#000000"
+           font-family="宋体"
+           font-size="14px"
+           text-anchor="middle"
+           id="text270599">返回识别结果</text>
+      </switch>
+    </g>
+  </g>
+  <switch
+     id="switch270613">
+    <g
+       requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+       id="g270607" />
+    <a
+       transform="translate(0,-5)"
+       xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems"
+       target="_blank"
+       id="a270611">
+      <text
+         text-anchor="middle"
+         font-size="10px"
+         x="50%"
+         y="100%"
+         id="text270609">Viewer does not support full SVG 1.1</text>
+    </a>
+  </switch>
+</svg>

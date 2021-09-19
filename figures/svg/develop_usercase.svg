@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="458px"
+   height="339px"
+   viewBox="-0.5 -0.5 458 339"
+   content="&lt;mxfile host=&quot;Electron&quot; modified=&quot;2021-09-18T18:37:11.532Z&quot; agent=&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/15.2.7 Chrome/93.0.4577.63 Electron/14.0.1 Safari/537.36&quot; etag=&quot;MjlSV3VDJLfl1tDT1PDQ&quot; version=&quot;15.2.7&quot; type=&quot;device&quot;&gt;&lt;diagram id=&quot;xBOtnrH2LO4txTKEr7bq&quot; name=&quot;第 1 页&quot;&gt;7Vpdj5s4FP01fuwIgwHzCAnZldqRqh2pH48kcQldgrPEaZL99b12TIDgpmlnEsKoo5Gwr40x51xfH1+CnNFy91eZrBaPfM5yZFvzHXLGyLaxRT24SMv+YAk8bUjLbK471Yan7H9W3amtm2zO1q2OgvNcZKu2ccaLgs1Ey5aUJd+2u33hefupqyRlHcPTLMm71o/ZXCwOVmr7tf1vlqWL6snYCw4ty6TqrN9kvUjmfNswOTFyRiXn4lBa7kYsl+BVuBzum/yg9TixkhXikhve/jPlpPi6/TC13v4bs0e6IR/fkMMo35J8o19YT1bsKwRKvinmTA5iISfaLjLBnlbJTLZugXOwLcQyhxqG4hdeCE0itnV9kiyzXNEfuyiMEY1QTFA0RoEDPfQEWCnY7odvho94gaMxvmSi3EMXfYNjacy1j9m+hnxbM2b7ethFgy3H0R0T7SXpcewaSChoLH8BV9vp4Mjm4Fi6WvACLlEbWl6KBU95keTvOF9pQL8yIfYa0WQjeBtutsvEp0b5sxzqwTn5043jnX6QquwblfeszOC9WVnZCsDgU7NyGNitqvVQqlaN9bvsS2jOcw9I8k05Y2cgr6JDUqZMnOnnmn2pZHkism/teby8X5A/fnGnfoG9Xh3DfR2O8WAdbq+dw/uZd6ja6YjDcJmgT5fB3b0bcIlGiFqyQCcowAqgUP6DBaoBRbGPAoJCqpoOIEJTJMunHgiSZSWLm2UezgQHbiK5UWcgj94lU5a/5+tMZLyALlMuBF82OoR5lsoGwU8kAt+IPCvY6CjYnkP3s3QDJlZLNxCrqxtcqysbfPdajOIOBbcLAu75VV+vcLe5vvE9h373wnXca+THXcl9f6QPaL+/lHS/V9L7PB+cJ30Q5NFeyetTq70C8npVTW5HNT3yIuVjAMLLYdbRtGxR6/23kRkaheSbtYI2hA7YXu0UelU7lFJ1jT0UgAyzZIGOJeBSlYUSbZBeUA2x0mAWqnJjTT/K82y1ZveaaDkRTI7dFUzVSzUFk3utNItnkMAeinwUKVVLQxRaA8OYYPLgtlC2aRdlzyBLr5bM8o0HDUoluHGAggCFhrTGfaNcuWnlyQbpf1OMqdGT5bGMqIInI8qwMHatk2hBesY4MGM8QaGLYvBmKBi0+F1jTE4jsiH1fVOM7T9H2JdNRXkXiirc63nGHsIhtk279Tpo7/ckZBJgAAgE07HetqivCiDJPCUWfLWjUamCZQ6SyrxjFFeZy8mLqXAVz2GX10ol0vOisWoCIe6oecVSiA8r5js2bcV8YthXMTYEfe9aQR+bFOLz3KDL37BIIoS0STIclbB9y50ZmyTm80ka8krqkGQ4ad2YJJNGhXeeqKwBMITlspCFUAKhP/N4MqEAR97gyMToxeKoWn5yHVYU13EU3ADLXIdMa6jPTMNi36lEi2bfrb7Btti3bxhHbcMCuqKKqpXT50bLHSYWyYViiFxHC0G1/pmWamv82M2JvwM=&lt;/diagram&gt;&lt;/mxfile&gt;"
+   id="svg885"
+   sodipodi:docname="develop_usercase.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <sodipodi:namedview
+     id="namedview887"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="2.2212389"
+     inkscape:cx="103.09562"
+     inkscape:cy="169.2749"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="1072"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="switch871" />
+  <defs
+     id="defs753" />
+  <g
+     id="g875">
+    <rect
+       x="186"
+       y="0"
+       width="271"
+       height="330"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect755" />
+    <path
+       d="M 67 155 L 211.38 78"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path757" />
+    <path
+       d="M 216.01 75.53 L 211.48 81.91 L 211.38 78 L 208.19 75.73 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path759" />
+    <path
+       d="M 67 155 L 198.95 198.03"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path761" />
+    <path
+       d="M 203.94 199.65 L 196.2 200.81 L 198.95 198.03 L 198.37 194.16 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path763" />
+    <path
+       d="M 67 155 L 198.57 289.45"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path765" />
+    <path
+       d="M 202.24 293.2 L 194.85 290.65 L 198.57 289.45 L 199.85 285.75 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path767" />
+    <ellipse
+       cx="42"
+       cy="139.38"
+       rx="12.5"
+       ry="9.375"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="ellipse769" />
+    <path
+       d="M 42 148.75 L 42 180 M 42 155 L 17 155 M 42 155 L 67 155 M 42 180 L 17 205 M 42 180 L 67 205"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path771" />
+    <g
+       transform="translate(-0.5 -0.5)"
+       id="g777">
+      <switch
+         id="switch775">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 212px; margin-left: 42px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 12px; font-family: 宋体; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: nowrap;">开发人员用例图</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="42"
+           y="224"
+           fill="#000000"
+           font-family="宋体"
+           font-size="12px"
+           text-anchor="middle"
+           id="text773">开发人员用例图</text>
+      </switch>
+    </g>
+    <path
+       d="M 303 75 L 318.52 45.63"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path779" />
+    <path
+       d="M 320.98 40.99 L 320.8 48.81 L 318.52 45.63 L 314.61 45.54 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path781" />
+    <path
+       d="M 303 75 L 357.3 47.85"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path783" />
+    <path
+       d="M 362 45.5 L 357.3 51.76 L 357.3 47.85 L 354.17 45.5 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path785" />
+    <path
+       d="M 303 75 L 371.2 81.56"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path787" />
+    <path
+       d="M 376.43 82.06 L 369.12 84.87 L 371.2 81.56 L 369.79 77.91 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path789" />
+    <path
+       d="M 303 75 L 327.83 97.57"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path791" />
+    <path
+       d="M 331.72 101.1 L 324.18 98.99 L 327.83 97.57 L 328.89 93.81 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path793" />
+    <ellipse
+       cx="260"
+       cy="75"
+       rx="43"
+       ry="25"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="ellipse795" />
+    <g
+       transform="translate(-0.9501992,-8.6035857)"
+       id="g801">
+      <switch
+         id="switch799">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 84px; height: 1px; padding-top: 75px; margin-left: 218px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 12px; font-family: 宋体; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">MongoDB<xhtml:br
+   style="font-size: 12px" />
+数据库管理</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="260"
+           y="79"
+           fill="#000000"
+           font-family="'宋体'"
+           font-size="12px"
+           text-anchor="middle"
+           id="text797"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:'宋体';-inkscape-font-specification:'宋体, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle;fill:#000000"><tspan
+             sodipodi:role="line"
+             id="tspan1023"
+             x="260"
+             y="79">MongoDB</tspan><tspan
+             sodipodi:role="line"
+             id="tspan1025"
+             x="260"
+             y="94">数据库管理</tspan></text>
+      </switch>
+    </g>
+    <ellipse
+       cx="321.5"
+       cy="25"
+       rx="30"
+       ry="15"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="ellipse803" />
+    <g
+       transform="translate(-0.5 -0.5)"
+       id="g809">
+      <switch
+         id="switch807">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 25px; margin-left: 293px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 12px; font-family: 宋体; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">添加</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="322"
+           y="29"
+           fill="#000000"
+           font-family="宋体"
+           font-size="12px"
+           text-anchor="middle"
+           id="text805">添加</text>
+      </switch>
+    </g>
+    <ellipse
+       cx="393"
+       cy="45"
+       rx="30"
+       ry="15"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="ellipse811" />
+    <g
+       transform="translate(-0.5 -0.5)"
+       id="g817">
+      <switch
+         id="switch815">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 45px; margin-left: 364px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 12px; font-family: 宋体; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">删除</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="393"
+           y="49"
+           fill="#000000"
+           font-family="宋体"
+           font-size="12px"
+           text-anchor="middle"
+           id="text813">删除</text>
+      </switch>
+    </g>
+    <ellipse
+       cx="407"
+       cy="85"
+       rx="30"
+       ry="15"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="ellipse819" />
+    <g
+       transform="translate(-0.5 -0.5)"
+       id="g825">
+      <switch
+         id="switch823">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 85px; margin-left: 378px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 12px; font-family: 宋体; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">更新</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="407"
+           y="89"
+           fill="#000000"
+           font-family="宋体"
+           font-size="12px"
+           text-anchor="middle"
+           id="text821">更新</text>
+      </switch>
+    </g>
+    <ellipse
+       cx="347"
+       cy="115"
+       rx="30"
+       ry="15"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="ellipse827" />
+    <g
+       transform="translate(-0.5 -0.5)"
+       id="g833">
+      <switch
+         id="switch831">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 115px; margin-left: 318px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 12px; font-family: 宋体; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">查询</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="347"
+           y="119"
+           fill="#000000"
+           font-family="宋体"
+           font-size="12px"
+           text-anchor="middle"
+           id="text829">查询</text>
+      </switch>
+    </g>
+    <path
+       d="M 315 200 L 374.91 181.85"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path835" />
+    <path
+       d="M 379.93 180.32 L 374.25 185.7 L 374.91 181.85 L 372.22 179 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path837" />
+    <path
+       d="M 315 200 L 374.7 209.05"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path839" />
+    <path
+       d="M 379.89 209.83 L 372.45 212.24 L 374.7 209.05 L 373.5 205.32 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path841" />
+    <ellipse
+       cx="260"
+       cy="200"
+       rx="55"
+       ry="30"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="ellipse843" />
+    <g
+       transform="translate(-1.4003984,-5.9023904)"
+       id="g849">
+      <switch
+         id="switch847">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 108px; height: 1px; padding-top: 200px; margin-left: 206px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 12px; font-family: 宋体; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">中文时间表达式<xhtml:br
+   style="font-size: 12px" />
+识别与解析</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="260"
+           y="204"
+           fill="#000000"
+           font-family="宋体"
+           font-size="12px"
+           text-anchor="middle"
+           id="text845"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:'宋体';-inkscape-font-specification:'宋体, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle;fill:#000000"><tspan
+             sodipodi:role="line"
+             id="tspan975"
+             x="260"
+             y="204">中文时间表达式</tspan><tspan
+             sodipodi:role="line"
+             id="tspan977"
+             x="260"
+             y="219">识别与解析</tspan></text>
+      </switch>
+    </g>
+    <ellipse
+       cx="381"
+       cy="165"
+       rx="60"
+       ry="15"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="ellipse851" />
+    <g
+       transform="translate(-0.5 -0.5)"
+       id="g857">
+      <switch
+         id="switch855">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 165px; margin-left: 322px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 12px; font-family: 宋体; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">中文时间表达式识别</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="381"
+           y="169"
+           fill="#000000"
+           font-family="宋体"
+           font-size="12px"
+           text-anchor="middle"
+           id="text853">中文时间表达式识别</text>
+      </switch>
+    </g>
+    <ellipse
+       cx="381"
+       cy="225"
+       rx="60"
+       ry="15"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="ellipse859" />
+    <g
+       transform="translate(-0.5 -0.5)"
+       id="g865">
+      <switch
+         id="switch863">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 225px; margin-left: 322px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 12px; font-family: 宋体; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">中文时间表达式解析</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="381"
+           y="229"
+           fill="#000000"
+           font-family="宋体"
+           font-size="12px"
+           text-anchor="middle"
+           id="text861">中文时间表达式解析</text>
+      </switch>
+    </g>
+    <ellipse
+       cx="260"
+       cy="285"
+       rx="61"
+       ry="30"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="ellipse867" />
+    <g
+       transform="translate(-0.5 -0.5)"
+       id="g873">
+      <switch
+         id="switch871">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 120px; height: 1px; padding-top: 285px; margin-left: 200px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 12px; font-family: 宋体; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">信息抽取结果<xhtml:br
+   style="font-size: 12px" />
+分析与展示</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="260"
+           y="280.44623"
+           fill="#000000"
+           font-family="宋体"
+           font-size="12px"
+           text-anchor="middle"
+           id="text869"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:SimSun;-inkscape-font-specification:'SimSun, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle;fill:#000000"><tspan
+             sodipodi:role="line"
+             id="tspan1125"
+             x="260"
+             y="280.44623">信息抽取结果</tspan><tspan
+             sodipodi:role="line"
+             id="tspan1127"
+             x="260"
+             y="295.44623">分析与展示</tspan></text>
+      </switch>
+    </g>
+  </g>
+  <switch
+     id="switch883">
+    <g
+       requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+       id="g877" />
+    <a
+       transform="translate(0,-5)"
+       xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems"
+       target="_blank"
+       id="a881">
+      <text
+         text-anchor="middle"
+         font-size="10px"
+         x="50%"
+         y="100%"
+         id="text879">Viewer does not support full SVG 1.1</text>
+    </a>
+  </switch>
+</svg>

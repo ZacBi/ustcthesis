@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="421px"
+   height="401px"
+   viewBox="-0.5 -0.5 421 401"
+   content="&lt;mxfile host=&quot;Electron&quot; modified=&quot;2021-09-18T19:54:55.569Z&quot; agent=&quot;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/15.2.7 Chrome/93.0.4577.63 Electron/14.0.1 Safari/537.36&quot; etag=&quot;Vt3OUdffOPNuQLbZQbjc&quot; version=&quot;15.2.7&quot; type=&quot;device&quot;&gt;&lt;diagram id=&quot;dDPzNShVRNH9cPpfi_1M&quot; name=&quot;第 1 页&quot;&gt;7Vptk9o2EP41+pgbvyN/NGCambYzaa+TJh8dLLBTg6gsDuiv70qW/ILNQS9cBNfcMHPSamXJ2n2eXS0gd7La/8SSTfYrTUmBHCvdI3eKHMe2cAD/hORQScJACZYsT5VSI3jM/yF6ppJu85SUHUVOacHzTVc4p+s1mfOOLGGM7rpqC1p0V90kS9ITPM6Toi/9M095VkmxM2rk70m+zPTKdhBWI6tEK6s3KbMkpbuWyI2RO2GU8qq12k9IIQ5Pn0s1b3ZitN4YI2t+yYT848+z4Lff5+V0/kc8+7iKN3b5Tj2l5Af9wiSF91ddynhGl3SdFHEjHTO6XadEPNWCXqPzC6UbENog/Eo4PyhjJltOQZTxVaFGyT7nn8T0B1/1PrdGpnv1ZNk56M6as0Nrkuh+bo8102RPz1vQNZ8lq7yQ/hf7KIoRHqPYQ+MpCl2lobZqVw+vzkQcxMmj1udGt2xOnjlfR7lswpaEP6Pn1Q4BSCJ0ReAdYB4jRcLzp+4+EuXSy1qvsTo0lOH/gxOoTT4lxVat1PeKogDECeuDG2+EMKXbLwWJa3nLvmlSZrV/7LKck3KTyGPaAUmALCk3FVYX+V4ofoOVngjjZP+8nfrnqiY4gcKmJifV3TVI1xpZC+RadnVDuG8djbL3gbAczouw24CodyFEw2+EqJr6geaww8YFw64Lus6Rc1X7UrOO/KvexstdzutjHyyAIxRZKMbCAvARpsAogkaAwgDhkWyM0DhAcSgbnlCObBRhOSsWH3jOeILwDDlBAQc7/sI6vh38vRWhTxr3XSmtG4GCMPBmL02sNaC1lP/FGiMUuXL5GMHRQSOSC8Ni4VRsBTaE4QVgryOxdfClY0x1ESP56bHLTy10mGImr+sWdT7UoibbGuAm77W4yQ6NklOLmhqiOkFO0DnmmJqw7A5dNex1m+lDeCE32Se86TvlD/eTRQ64xp2YuHVnMGDicCBMAAcD9c4k9VooCuTZTYVQSCaCmK/H/IF4oggzMtio4OQJzhfhaiZDkQxO0TXjTTu6VF4hF8PV20N8s3qeX3JG/6rvik7XZ3XyvNovxXX5YVHQ3TxLGH9IyTwvc7o+EZGMhSG/m51Yfi8MhQNRKHytKOS8+RTZMB3Zushylo8ck3ykt3kmbw1R5CDsySH4YIloSyWwY/fqFFXnxsB+E5muzpq0OexnUPeQih5fUFzjmehAecIUB1gv4gD7xjnAvTTt9I1ygDvAAZAejCXiPdEQWUELhIB4CNqxZAIcdG+RFgr7aew94NOzuwD1fOMA9X4A9HUB6l8K0JFRgPrDQRqAKJEaRQjbEpeBjM26uvMWUFjX8cyhMPiBwtdF4ehSFGKjKBwNoHCokApJK7Z0BMWqEdY6kzeByxsopOK+PXpAHfpaTRcPyDp95AkXo4u8KCa0oExOcy35J1RlEWJoxJQZ3Nv6ps3xTZKj3abGc9Xsmhw7VYRbr1zr8HeeHF2T5Ki3eaaOcLrW+JIS4T3w5vEXUOZvFY7RW8X/AbLOhZA1+1WE3uZRPnM5QK9X8eshXeRVsSw2VFnUfd5lwu8Hfeg2v4CrftPQ/I7Qjf8F&lt;/diagram&gt;&lt;/mxfile&gt;"
+   id="svg130951"
+   sodipodi:docname="resolve_pipeline.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <sodipodi:namedview
+     id="namedview130953"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.8778055"
+     inkscape:cx="210.35193"
+     inkscape:cy="200.76627"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="1072"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g130941" />
+  <defs
+     id="defs130827" />
+  <g
+     id="g130941">
+    <path
+       d="M 200 60 L 200 113.63"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path130829" />
+    <path
+       d="m 200,113.63 -3.5,-7 3.5,1.75 3.5,-1.75 z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path130831" />
+    <ellipse
+       cx="200"
+       cy="30"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="ellipse130833"
+       ry="30"
+       rx="30" />
+    <ellipse
+       cx="200"
+       cy="30"
+       fill="none"
+       stroke="#000000"
+       pointer-events="all"
+       id="ellipse130835"
+       ry="26"
+       rx="26" />
+    <path
+       d="M 200 160 L 200 208.63"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path130837" />
+    <path
+       d="M 200 213.88 L 196.5 206.88 L 200 208.63 L 203.5 206.88 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path130839" />
+    <rect
+       x="142.60541"
+       y="114.79053"
+       width="115.88418"
+       height="45.178471"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect130841"
+       style="stroke-width:1.14406" />
+    <g
+       transform="translate(0.56507105,-8.4880474)"
+       id="g130847">
+      <switch
+         id="switch130845">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 98px; height: 1px; padding-top: 140px; margin-left: 151px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 10.5px; font-family: 宋体; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">加载中文时间表达式<xhtml:br
+   style="font-size: 10.5px" />
+解析模块配置</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="200"
+           y="143"
+           fill="#000000"
+           font-family="'宋体'"
+           font-size="11px"
+           text-anchor="middle"
+           id="text130843"
+           style="font-size:11px;font-family:'宋体';text-anchor:middle;fill:#000000"><tspan
+             sodipodi:role="line"
+             id="tspan148602"
+             x="200"
+             y="143"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:'宋体';-inkscape-font-specification:'宋体, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">加载中文时间表</tspan><tspan
+             sodipodi:role="line"
+             id="tspan148604"
+             x="200"
+             y="160.5"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:'宋体';-inkscape-font-specification:'宋体, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">达式解析模块配置</tspan></text>
+      </switch>
+    </g>
+    <path
+       d="M 155 260 L 106.37 260"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path130849" />
+    <path
+       d="M 101.12 260 L 108.12 256.5 L 106.37 260 L 108.12 263.5 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path130851" />
+    <path
+       d="M 200 305 L 200 353.63"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path130853" />
+    <path
+       d="M 200 358.88 L 196.5 351.88 L 200 353.63 L 203.5 351.88 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path130855" />
+    <path
+       d="M 200,213.88 245,259.44 200,305 155,259.44 Z"
+       fill="#ffffff"
+       stroke="#000000"
+       stroke-width="2.01241"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path130857" />
+    <g
+       transform="translate(0.56507304,-15.943559)"
+       id="g130863">
+      <switch
+         id="switch130861">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 88px; height: 1px; padding-top: 260px; margin-left: 156px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 10.5px; font-family: 宋体; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">是否存在<xhtml:br
+   style="font-size: 10.5px" />
+朴素贝叶斯<xhtml:br
+   style="font-size: 10.5px" />
+模型参数</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="200"
+           y="263"
+           fill="#000000"
+           font-family="'宋体'"
+           font-size="11px"
+           text-anchor="middle"
+           id="text130859"
+           style="font-size:11px;font-family:'宋体';text-anchor:middle;fill:#000000"><tspan
+             sodipodi:role="line"
+             id="tspan160199"
+             x="200"
+             y="263"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:'宋体';-inkscape-font-specification:'宋体, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+               id="tspan141421">是否存在</tspan></tspan><tspan
+             sodipodi:role="line"
+             id="tspan160201"
+             x="200"
+             y="280.5"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:'宋体';-inkscape-font-specification:'宋体, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+               id="tspan160203">朴素贝叶斯</tspan></tspan><tspan
+             sodipodi:role="line"
+             x="200"
+             y="298"
+             id="tspan161431"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:'宋体';-inkscape-font-specification:'宋体, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+               id="tspan161433">模型参数</tspan></tspan></text>
+      </switch>
+    </g>
+    <path
+       d="M 50 280 L 50 353.63"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path130865" />
+    <path
+       d="M 50 358.88 L 46.5 351.88 L 50 353.63 L 53.5 351.88 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path130867" />
+    <rect
+       x="0"
+       y="240"
+       width="100"
+       height="40"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect130869" />
+    <g
+       transform="translate(2.1626826,-5.8253652)"
+       id="g130875">
+      <switch
+         id="switch130873">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 98px; height: 1px; padding-top: 260px; margin-left: 1px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 10.5px; font-family: 宋体; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">加载预先标注<xhtml:br
+   style="font-size: 10.5px" />
+文本语料</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="50"
+           y="263"
+           fill="#000000"
+           font-family="宋体"
+           font-size="11px"
+           text-anchor="middle"
+           id="text130871"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:'宋体';-inkscape-font-specification:'宋体, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-anchor:middle;fill:#000000"><tspan
+             sodipodi:role="line"
+             id="tspan135241"
+             x="50"
+             y="263">加载预先</tspan><tspan
+             sodipodi:role="line"
+             id="tspan135243"
+             x="50"
+             y="280.5">标注文本语料</tspan></text>
+      </switch>
+    </g>
+    <path
+       d="M 370 360 L 370 276.37"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path130877" />
+    <path
+       d="M 370 271.12 L 373.5 278.12 L 370 276.37 L 366.5 278.12 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path130879" />
+    <rect
+       x="320"
+       y="360"
+       width="100"
+       height="40"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect130881" />
+    <g
+       transform="translate(0.03253652,2.1626826)"
+       id="g130887">
+      <switch
+         id="switch130885">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 98px; height: 1px; padding-top: 380px; margin-left: 321px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 10.5px; font-family: 宋体; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">组件语法分析树</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="370"
+           y="383"
+           fill="#000000"
+           font-family="'宋体'"
+           font-size="11px"
+           text-anchor="middle"
+           id="text130883"
+           style="font-size:11px;font-family:'宋体';text-anchor:middle;fill:#000000"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:'宋体';-inkscape-font-specification:'宋体, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+             id="tspan144467">组建语法分析树</tspan></text>
+      </switch>
+    </g>
+    <path
+       d="M 370 230 L 370 166.37"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path130889" />
+    <path
+       d="M 370 161.12 L 373.5 168.12 L 370 166.37 L 366.5 168.12 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path130891" />
+    <rect
+       x="320"
+       y="230"
+       width="100"
+       height="40"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect130893" />
+    <g
+       transform="translate(0.03253652,1.6301461)"
+       id="g130899">
+      <switch
+         id="switch130897">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 98px; height: 1px; padding-top: 250px; margin-left: 321px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 10.5px; font-family: 宋体; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">冲突消解</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="370"
+           y="253"
+           fill="#000000"
+           font-family="'宋体'"
+           font-size="11px"
+           text-anchor="middle"
+           id="text130895"
+           style="font-size:11px;font-family:'宋体';text-anchor:middle;fill:#000000"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:'宋体';-inkscape-font-specification:'宋体, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+             id="tspan145657">冲突消解</tspan></text>
+      </switch>
+    </g>
+    <path
+       d="M 370 120 L 370 66.37"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path130901" />
+    <path
+       d="M 370 61.12 L 373.5 68.12 L 370 66.37 L 366.5 68.12 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path130903" />
+    <rect
+       x="320"
+       y="120"
+       width="100"
+       height="40"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect130905" />
+    <g
+       transform="translate(-0.5,3.2277556)"
+       id="g130911">
+      <switch
+         id="switch130909">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 98px; height: 1px; padding-top: 140px; margin-left: 321px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 10.5px; font-family: 宋体; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">解析最终结果</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="370"
+           y="143"
+           fill="#000000"
+           font-family="'宋体'"
+           font-size="11px"
+           text-anchor="middle"
+           id="text130907"
+           style="font-size:11px;font-family:'宋体';text-anchor:middle;fill:#000000"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:'宋体';-inkscape-font-specification:'宋体, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+             id="tspan146853">解析最终结果</tspan></text>
+      </switch>
+    </g>
+    <ellipse
+       cx="370"
+       cy="30"
+       fill="#000000"
+       stroke="#000000"
+       pointer-events="all"
+       id="ellipse130913"
+       ry="26"
+       rx="26" />
+    <ellipse
+       cx="370"
+       cy="30"
+       fill="none"
+       stroke="#000000"
+       pointer-events="all"
+       id="ellipse130915"
+       ry="30"
+       rx="30" />
+    <path
+       d="M 250 380 L 313.63 380"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path130917" />
+    <path
+       d="M 318.88 380 L 311.88 383.5 L 313.63 380 L 311.88 376.5 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path130919" />
+    <rect
+       x="150"
+       y="360"
+       width="100"
+       height="40"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect130921" />
+    <g
+       transform="translate(-1.0325365,-5.2928287)"
+       id="g130927">
+      <switch
+         id="switch130925">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 98px; height: 1px; padding-top: 380px; margin-left: 151px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 10.5px; font-family: 宋体; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">加载贝叶斯模型参数</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="200"
+           y="383"
+           fill="#000000"
+           font-family="'宋体'"
+           font-size="11px"
+           text-anchor="middle"
+           id="text130923"
+           style="font-size:11px;font-family:'宋体';text-anchor:middle;fill:#000000"><tspan
+             sodipodi:role="line"
+             id="tspan155677"
+             x="200"
+             y="383"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:'宋体';-inkscape-font-specification:'宋体, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+               id="tspan139787">加载贝叶斯</tspan></tspan><tspan
+             sodipodi:role="line"
+             id="tspan155679"
+             x="200"
+             y="400.5"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:'宋体';-inkscape-font-specification:'宋体, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+               id="tspan155681">模型参数</tspan></tspan></text>
+      </switch>
+    </g>
+    <path
+       d="M 100 380 L 143.63 380"
+       fill="none"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="stroke"
+       id="path130929" />
+    <path
+       d="M 148.88 380 L 141.88 383.5 L 143.63 380 L 141.88 376.5 Z"
+       fill="#000000"
+       stroke="#000000"
+       stroke-miterlimit="10"
+       pointer-events="all"
+       id="path130931" />
+    <rect
+       x="0"
+       y="360"
+       width="100"
+       height="40"
+       fill="#ffffff"
+       stroke="#000000"
+       pointer-events="all"
+       id="rect130933" />
+    <g
+       transform="translate(0.03253652,-4.7602922)"
+       id="g130939">
+      <switch
+         id="switch130937">
+        <foreignObject
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+           style="overflow: visible; text-align: left;">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 98px; height: 1px; padding-top: 380px; margin-left: 1px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0px; text-align: center;">
+              <xhtml:div
+                 style="display: inline-block; font-size: 10.5px; font-family: 宋体; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">贝叶斯模型<xhtml:br
+   style="font-size: 10.5px" />
+参数训练</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <text
+           x="50"
+           y="383"
+           fill="#000000"
+           font-family="'宋体'"
+           font-size="11px"
+           text-anchor="middle"
+           id="text130935"
+           style="font-size:11px;font-family:'宋体';text-anchor:middle;fill:#000000"><tspan
+             sodipodi:role="line"
+             id="tspan157040"
+             x="50"
+             y="383"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:'宋体';-inkscape-font-specification:'宋体, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+               id="tspan138297">贝叶斯模型</tspan></tspan><tspan
+             sodipodi:role="line"
+             id="tspan157042"
+             x="50"
+             y="400.5"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:'宋体';-inkscape-font-specification:'宋体, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+               id="tspan157044">参数训练</tspan></tspan></text>
+      </switch>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;line-height:1.25;font-family:SimSun;-inkscape-font-specification:'SimSun, Normal'"
+       x="204.52655"
+       y="331.27026"
+       id="text171881"><tspan
+         sodipodi:role="line"
+         id="tspan171879"
+         x="204.52655"
+         y="331.27026">YES</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:14px;line-height:1.25;font-family:SimSun;-inkscape-font-specification:'SimSun, Normal'"
+       x="121.84769"
+       y="255.21924"
+       id="text171881-0"><tspan
+         sodipodi:role="line"
+         id="tspan171879-2"
+         x="121.84769"
+         y="255.21924">NO</tspan></text>
+  </g>
+  <switch
+     id="switch130949">
+    <g
+       requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+       id="g130943" />
+    <a
+       transform="translate(0,-5)"
+       xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems"
+       target="_blank"
+       id="a130947">
+      <text
+         text-anchor="middle"
+         font-size="10px"
+         x="50%"
+         y="100%"
+         id="text130945">Viewer does not support full SVG 1.1</text>
+    </a>
+  </switch>
+</svg>
