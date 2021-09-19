@@ -18,7 +18,7 @@
 
 在以英语为代表的印欧语言体系中，词语由表音（字音）构成，不同的动词形式和专有的时间词语能够便捷地表现时间表达式的时态和语态，是文本表达时间信息和将上下文转化为时间逻辑运算符（logic operator）的重要元素。
 与之相反，中文时间表达式无论是发生在过去、现在还是未来，其动词和时间名词都没有时态和语态上的变化。此外，汉语中一词（字）多义的语言特性也使中文时间表达式的识别变得更加复杂，其中不仅包含命名实体识别这一项任务，同时还涵盖部分的语义消歧任务。
-例如‘3日’，既可识别为时间段，即时间轴上以‘天’（days）为单位、长度为3的一段区间，又可识别为与月份相结合的时间点。此外，汉语的口语化特点也使得时间表达式需要考虑上下文及省略的时间单位（omit unit），如‘8月5日到9日’、‘3分二十五’，因此识别难度大大增加。
+例如‘3日’，既可识别为时间段，即时间轴上以‘天’（days）为单位、长度为3的一段区间，又可识别为与月份相结合的时间点。汉语的口语化特点也使得时间表达式需要考虑上下文及省略的时间单位（omit unit），如‘8月5日到9日’、‘3分二十五’，因此识别难度大大增加。
 
 一贯以来，时间表达式归一化任务产生的时间短语格式都采用的是ISO-TimeML Timex3标准，在表达时间语义上存在的一些缺陷。
 首先，对于某些没有对齐到日历时间单位（即年、月、日等）的时间表达式，不能准确地表现其时间的语义。例如‘上个学期’，很难结构化为‘YYYY-MM-DDTHH:MM:SS’的时间格式。
@@ -34,7 +34,7 @@
 \subsection{时间信息抽取任务概述}
 
 理解文本中出现的时间信息是自然语言理解中的一个关键任务，能让许多应用从中获益，如问答系统、多轮对话和信息抽取等。
-近几十年来都未曾停止对时间信息抽取任务的研究，如手工标注包含时间表达式的语料，探索时间信息抽取的方法等。随着开源理念的盛行，也出现一些公开的语料库作为评测的benchmark，
+近几十年来都未曾停下对时间信息抽取任务研究的脚步，包括手工标注包含时间表达式的语料、探索时间信息抽取的方法等。随着开源理念的盛行，也出现一些公开的语料库作为评测的benchmark，
 例如TimeBank\cite{Pustejovsky03}，TempEval-3\cite{uzzaman-etal-2013-semeval}，SemEval 2018 task 6\cite{laparra-etal-2018-semeval}等。
 
 最早开始的时间信息抽取工作与形式化的描述时间和定义时间信息的标注方式有关。Bruce\cite{bruce1972model}最早提出将时间定义为有序对，即（时间，‘≤’），其中时间是时间点（timepoint）的集合，‘≤’表示时间之间的偏序关系。
@@ -48,7 +48,7 @@
 最后则是命名实体识别（NER，named-entity recognition），识别句中的目标片段。
 
 最开始的时间信息抽取属于命名实体识别的一部分，但自2004年ACE\cite{doddington2004automatic}（Automatic content extraction）引入TERN（temporal expression recognition and normalization）任务后，时间信息抽取任务就逐渐从命名实体识别任务中独立出来。
-时间信息抽取任务的研究通常可以分为以下三种子任务：1.时间识别；2.时间归一化，将不同方式表述的时间表达式统一化为一种形式；3.时间标注，以标准形式表示时间并在文本中以适当形式标注。
+时间信息抽取任务的研究通常可以分为以下三种子任务：（1）时间识别；（2）时间归一化，将不同方式表述的时间表达式统一化为一种形式；（3）时间标注，以标准形式表示时间并在文本中以适当形式标注。
 当下流行的标注格式是使用XML语言的TimeML\cite{pustejovsky2003timeml}格式。图~\ref{fig:tagging_pregress}展示时间标注的完整过程。
 
 \begin{figure}[h]
@@ -82,14 +82,14 @@ FudanNLP\cite{qiu2013fudannlp}是最早通用的采用规则的时间标注器�
     \caption{近十年中文时间信息抽取研究}
     \begin{tabular}{*{4}{c}}
         \toprule
-        研究      & 任务        & 抽取方式 & 语料集   \\
+        研究                       & 任务        & 抽取方式      & 语料集     \\
         \midrule
-        Liu(2016) & 识别+归一化 & 规则     & 自有语料 \\
-        Liu(2015) & 识别+归一化 & 规则 & TempEval-2 \\
-        Angeli and Uszkoreit(2013) & 识别 & 规则+机器学习 & ACE 2005 \\
-        Wu(2010) & 识别 & 规则 & 自有语料 \\
-        Wen(2010) & 归一化 & 规则 & ACE 2005\\
-        He(2009) & 识别 & 规则+机器学习 & ACE 2005\\
+        Liu(2016)                  & 识别+归一化 & 规则          & 自有语料   \\
+        Liu(2015)                  & 识别+归一化 & 规则          & TempEval-2 \\
+        Angeli and Uszkoreit(2013) & 识别        & 规则+机器学习 & ACE 2005   \\
+        Wu(2010)                   & 识别        & 规则          & 自有语料   \\
+        Wen(2010)                  & 归一化      & 规则          & ACE 2005   \\
+        He(2009)                   & 识别        & 规则+机器学习 & ACE 2005   \\
         \bottomrule
     \end{tabular}
     \label{tab:research}
@@ -101,10 +101,20 @@ FudanNLP\cite{qiu2013fudannlp}是最早通用的采用规则的时间标注器�
 
 截止目前，在时间抽取任务语料库上达到SOTA（state-of-the-art）的时间标注器有：HeidelTime1\cite{strotgen2010heideltime}，SuTime\cite{chang2012sutime}，Chrono\cite{olex2018chrono}和ManTIME\cite{filannino2013mantime}。
 时间标注器的评估标准在时间表达式的识别和归一化两方面有所不同，前者侧重于正确的识别文本中有关时间的片段，后者侧重于将时间表达式归一化到统一格式，其复杂程度取决于识别到的时间表达式的类型。
-通用的评估方法是Fβ-measure，P（precision）为正确识别的时间表达式占总的识别出的时间表达式的相对频率，R（recall）为正确识别的时间表达式占文本中所有时间表达式的比例。
+时间信息抽取的通用评估方法是$F_β$-measure，具体公式可参考公式~\ref{eq:group}。
+其中P（precision，精度）为正确识别的时间表达式占总的识别出的时间表达式的相对频率，R（recall，召回率）为正确识别的时间表达式占文本中所有时间表达式的比例。T、F分别表示True和False。
+$\beta$则为常系数，其越大时评估方法更侧重于对于精度的考察。
+
+\begin{subequations}\label{eq:group}
+\begin{alignat}{1}
+    P & = \frac{TP}{TP + FP} \\
+    R & = \frac{TP}{TP + FN} \\
+    F_\beta & = \frac{(\beta^2 + 1) \times P \times R}{\beta^2 \times P + R}
+\end{alignat}
+\end{subequations}
 
 SuTime和HeidelTime都是基于规则（rule-based）开发的，前者由Stanford开发，对英语文本进行单独优化；后者由\citet{strotgen2010heideltime}开发，同时做到了跨语言（英语，德语，中文等）和跨领域（新闻与记叙文）的时间标注，其提出了一种自动翻译与人工标注相结合的方式，以解决跨领域、跨语言的时间信息抽取。
-两者在TempEval-3上进行测评时都取得较好的表现。SuTime在时间表达式的识别上F1值为0.932，HeidelTime的F1值则为0.930（宽匹配）。
+两者在TempEval-3上进行测评时都取得较好的表现。SuTime在时间表达式的识别上F1值为0.932，HeidelTime的F1值则为0.930。
 在时间表达式的归一化上HeidelTime更优，分数为0.86，而SuTime为0.75。
 
 随着大数据时代的到来和计算力的提升，时间信息抽取系统也开始逐渐与机器学习、深度学习相结合，ClearTK\cite{bethard2013cleartk}采用支持向量机（SVM，support vector machine）与逻辑回归（LR，logistic regression）相结合的方式，在TempEval-3的整体分数为64.66。
@@ -115,26 +125,47 @@ ManTime\cite{filannino2013mantime}采用条件随机场（CRF，conditional rand
 
 \section{选题的先进性和实用性}
 
-本文将语料中抽取到的时间信息分为以下几类:
+本文将语料中抽取到的时间信息分为以下几类：
 \begin{enumerate}
-    \item[(1)]  Datetime: 具体的时间日期，如‘2020年3月5日’；
-    \item[(2)]  Datetime Interval: 两个Datetime形成的区间，如‘3月五日到六月7日’；
-    \item[(3)]  Duration: 时长，如‘3天’；
-    \item[(4)]  Duration Interval: 时长形成的区间，如‘3到五天’；
-    \item[(5)]  Advanced features:
-        \begin{enumerate}
-            \item[(a)] Frequency，如‘每两天’；
-            \item[(b)] Shift，如‘三天后’；
-            \item[(c)] Complex time expression，如‘明天下午三点到五点’；
-            \item[(d)] Others。
-        \end{enumerate}
+    \item[(1)]  Datetime： 具体的时间日期，如‘2020年3月5日’；
+    \item[(2)]  Datetime Interval： 两个Datetime形成的区间，如‘3月五日到六月7日’；
+    \item[(3)]  Duration： 时长，如‘3天’；
+    \item[(4)]  Duration Interval： 时长形成的区间，如‘3到五天’；
+    \item[(5)]  Advanced features：
+          \begin{enumerate}
+              \item[(a)] Frequency，如‘每两天’；
+              \item[(b)] Shift，如‘三天后’；
+              \item[(c)] Complex time expression，如‘明天下午三点到五点’；
+              \item[(d)] Others。
+          \end{enumerate}
 \end{enumerate}
 
 工业界落地的项目中，基本是采用规则的方式解决时间识别的问题，如阿里云小蜜（Alibaba ISR），百度unit（Baidu Unit）。
-Facebook的Duckling同样采用PCFG识别时间表达式，但是对于某些时间表达式无法识别和归一化。表2做出了竞品分析，Frankenstein是本系统的名称。
-以下各章节中若无特殊说明，均将‘中文时间信息抽取系统’默认为本项目中设计及开发的中文时间信息系统。
+Facebook的Duckling则采用概率上下文无关语法识别时间表达式，但是对于某些时间表达式无法识别和归一化。
+表~\ref{tab:product_analysis}做出了竞品分析，其中Frankenstein是本中文时间信息抽取系统的名称。
 当时间信息作为系统完成某项任务的决策特征之一时，时间表达式识别的广度和归一化的正确度就显得十分必要。
 本系统采用的方法应能显著改良中文时间信息抽取的体验。
+
+\begin{table}[h]
+    \centering
+    \caption{数据库表结构设计}
+    \newcolumntype{Y}{>{\centering\arraybackslash}X}
+    \begin{tabularx}{\linewidth}{*{7}{Y}}
+        \toprule
+        Project           & Datetime & Datetime Interval & Duration & Duration Interval & Advanced features \\
+        \midrule
+        Frankenstein      & R + N    & R + N             & R + N    & R + N             & R + N             \\
+        Alibaba ISR       & R        & F                 & R        & F                 & F                 \\
+        Baidu Unit        & R        & R + PN            & R + N    & F                 & F                 \\
+        Facebook Duckling & R + N    & F                 & R + N    & F                 & R + PN            \\
+        \bottomrule
+    \end{tabularx}
+    \begin{tablenotes}
+        \footnotesize
+        \item 注：R=recognition，N=normalization，F=false，PN=partial normalization
+    \end{tablenotes}
+    \label{tab:product_analysis}
+\end{table}
 
 
 \section{论文主要工作}
@@ -143,15 +174,15 @@ Facebook的Duckling同样采用PCFG识别时间表达式，但是对于某些时
 系统需要从与客户的对话之中了解用户的意图，然后进行多轮对话，以完成一项任务的整体流程。时间信息抽取作为实体解析的一部分，是上层应用如知识图谱、填槽型多轮对话的基石，也是完成一项任务必不可少的内容。
 中文时间信息抽取系统既可以作为中间件与其他信息处理模块协同工作处理完整的业务流程，又可作为单一的完整系统与用户直接实现交互。
 
-本文将从以下几个方面阐述中文时间信息抽取系统的开发过程:
+本文将从以下几个方面阐述中文时间信息抽取系统的开发过程：
 \begin{enumerate}
-    \item[(1)] 时间表达式识别规则的设计和实现;
-    \item[(2)] 时间表达式解析规则的设计和实现;
-    \item[(3)] 用户调用接口的实现;
+    \item[(1)] 时间表达式识别规则的设计和实现；
+    \item[(2)] 时间表达式解析规则的设计和实现；
+    \item[(3)] 用户调用接口的实现；
     \item[(4)] 用户交互界面的初步实现。
 \end{enumerate}
 
-整个项目进行过程中，本人的主要工作如下:
+整个项目进行过程中，本人的主要工作如下：
 \begin{enumerate}
     \item[(1)] 参与时间表达式识别框架的构建和改进。将时间表达式的组合语义标注方式迁移到中文语境下，并设计时间归一化过程的表达式的计算；
     \item[(2)] 收集关于时间表达式的语料库，在现有中文时间表达式语料不完整、数据量不充足额情况下，对语料进行增强，并对语料加以整理和清洗；
@@ -162,18 +193,18 @@ Facebook的Duckling同样采用PCFG识别时间表达式，但是对于某些时
 
 \section{本文的组织结构}
 
-本文主要分为七个章节，没个章节的具体内容安排如下:
+本文主要分为七个章节，每个章节的具体内容安排如下：
 
-第一章: 绪论，主要介绍时间表达式抽取的国内外发展状况，描述本文设计的代码检查工具的研究背景及其研究意义。
+第一章： 绪论，主要介绍时间表达式抽取的国内外发展状况，描述本文设计的代码检查工具的研究背景及其研究意义。
 
-第二章: 相关知识与背景引导，本章主要介绍了本项目中使用的相关技术及原理，如概率无关上下文法、sklearn、MongoDB等。
+第二章： 相关知识与背景引导，本章主要介绍了本项目中使用的相关技术及原理，如概率无关上下文法、sklearn、MongoDB等。
 
-第三章: 需求分析，本章节从功能性需求和非功能性需求两个方面对本中文时间表达式信息抽取系统进行详尽的需求分析，分析总结了时间表达式信息抽取系统所需要实现的功能及其他性能需求。
+第三章： 需求分析，本章节从功能性需求和非功能性需求两个方面对本中文时间表达式信息抽取系统进行详尽的需求分析，分析总结了时间表达式信息抽取系统所需要实现的功能及其他性能需求。
 
-第四章: 概要设计，本章节主要介绍时间表达式信息抽取系统的框架设计和功能模块的设计，详细的阐述了时间表达式信息抽取系统所应用的解决方案以及该系统的不同模块之间的协作。
+第四章： 概要设计，本章节主要介绍时间表达式信息抽取系统的框架设计和功能模块的设计，详细的阐述了时间表达式信息抽取系统所应用的解决方案以及该系统的不同模块之间的协作。
 
-第五章: 详细设计，本章节对时间表达式信息抽取系统进行详细设计，并介绍部分时间表达式识别和解析规则的具体实现。
+第五章： 详细设计，本章节对时间表达式信息抽取系统进行详细设计，并介绍部分时间表达式识别和解析规则的具体实现。
 
-第六章: 系统的测试与分析，本章节主要是对系统的功能及性能进行评估，确保本文的时间表达式信息抽取系统能够基本满足用户的各种需求。
+第六章： 系统的测试与分析，本章节主要是对系统的功能及性能进行评估，确保本文的时间表达式信息抽取系统能够基本满足用户的各种需求。
 
-第七章: 总结与展望，本章节首先对七个月左右的实习工作和论文进行简单的总结，同时对本文的时间表达式信息抽取系统中存在的不足进行描述分析，且对本系统的未来发展进行展望，提出对未来工作的优化建议。
+第七章： 总结与展望，本章节首先对七个月左右的实习工作和论文进行简单的总结，同时对本文的时间表达式信息抽取系统中存在的不足进行描述分析，且对本系统的未来发展进行展望，提出对未来工作的优化建议。
