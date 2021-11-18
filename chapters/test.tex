@@ -161,9 +161,42 @@
 
 \section{非功能性测试}
 
+\subsection{准确度测试}
+
+准确度测试是衡量系统能否成功交付的关键性因素，这里采用的测试数据集为TempEval-2\cite{verhagen-etal-2010-semeval}的中文时间表达式数据集。
+数据集中包含四种类型数据，分别为时间点(\textit{e.g. 下午2点25分})类型, 日期(\textit{e.g. 2021年10月20日})类型，时间段(\textit{e.g. 两周})类型，集合(\textit{e.g. 每个月10号})类型。
+训练集中共有时间表达式746条，测试集中共有时间表达式190条。
+测试结果以精准度，召回率和F1值共同评估。
+本系统分别与只采用规则的HeidelTime\cite{strotgen2010heideltime}和规则与机器学习结合的AU13\cite{angeli-uszkoreit-2013-language}进行比较，比较结果见表~\ref{tab:test_compare}。
+
+\begin{table}[h]
+    \centering
+    \caption{TempEval2数据集识别与解析结果比较}
+    \begin{tabular}{*{4}{c}}
+        \toprule
+        训练集       & 准确度 & 召回率 & F1值 \\
+        \midrule
+        AU13         & 80.7   & 95.1   & 87.3 \\
+        HeidelTime   & 96.1   & 92.7   & 94.4 \\
+        Frankenstein & 90.2   & 86.7   & 88.3 \\
+        \midrule
+        测试集       & 准确度 & 召回率 & F1值 \\
+        \midrule
+        AU13   & 63.5   & 88.0   & 73.8 \\
+        HeidelTime   & 93.4   & 82.0   & 87.3 \\
+        Frankenstein & 83.2   & 84.2   & 83.7 \\
+        \bottomrule
+    \end{tabular}
+    \begin{tablenotes}
+        \footnotesize
+        \item 注: Frankenstein输出与TIMEX2输出格式有所不同, 此为为转化为TIMEX2后比较结果
+    \end{tablenotes}
+    \label{tab:test_compare}
+\end{table}
+
 \subsection{响应度和可用性测试}
 
-\begin{figure}[t]
+\begin{figure}[b]
     \centering
     \includegraphics[width=1\textwidth]{pressure.pdf}
     \caption{压力测试图}
