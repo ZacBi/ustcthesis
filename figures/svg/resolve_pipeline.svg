@@ -327,7 +327,7 @@
             <xhtml:div
                style="box-sizing: border-box; font-size: 0px; text-align: center;">
               <xhtml:div
-                 style="display: inline-block; font-size: 10.5px; font-family: 宋体; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">组件语法分析树</xhtml:div>
+                 style="display: inline-block; font-size: 10.5px; font-family: 宋体; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">组件语法解析树</xhtml:div>
             </xhtml:div>
           </xhtml:div>
         </foreignObject>
@@ -341,7 +341,7 @@
            id="text130883"
            style="font-size:11px;font-family:'宋体';text-anchor:middle;fill:#000000"><tspan
              style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:'宋体';-inkscape-font-specification:'宋体, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
-             id="tspan144467">组建语法分析树</tspan></text>
+             id="tspan144467">组建语法解析树</tspan></text>
       </switch>
     </g>
     <path

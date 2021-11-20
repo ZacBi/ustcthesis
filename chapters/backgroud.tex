@@ -4,33 +4,57 @@
 
 \section{上下文无关语法}
 
-上下文无关语法起源于语言学，用于描述自然语言中句子和单词的结构，由语言学家诺姆·乔姆斯基发明。
+上下文无关语法起源于语言学，用于描述自然语言中语句和单词的结构，由语言学家诺姆·乔姆斯基发明。
 在计算机科学的早期应用中，语法被用来描述编程语言的结构。
 之后常作为可扩展标记语言（XML，Extensible Markup Language）的一个重要部分而被广泛应用，称为文档类型定义\cite{hopcroft2001introduction}。
 在语言学中，一些作者使用术语“短语结构语法”来指代上下文无关语法，因此短语结构语法不同于依赖语法。在计算机科学中，上下文无关语法的一种通用符号表示是Backus–Naur范式(BNF)。
 
 上下文无关语法在形式语言理论中是一种形式语法，本质上是一组产生式规则，用以描述给定形式语言中所有可能的字符串。其产生式规则形如：A \rightarrow $\alpha$。
 其中A为非终止符，$\alpha$则是由一组终止符，非终止符或空串组成的符号串。
-它与上下文相关语法的区别主要在于任何情况下左侧的单个非终结符都可以替换为右侧的符号串，即无论非终结符的上下文是什么，它的产生式规则可以被应用。
+它与上下文相关语法的区别主要在于任何情况下左侧的单个非终止符都可以替换为右侧的符号串，即无论非终止符的上下文是什么，它的产生式规则可以被应用。
 产生式规则的应用就是进行简单的替换。例如这一条规则: $\displaystyle \langle {\text{Stmt}}\rangle \to \langle {\text{Id}}\rangle =\langle {\text{Expr}}\rangle$，
 可以用$\displaystyle \langle {\text{Stmt}}\rangle$ 取代 $\langle {\text{Id}}\rangle =\langle {\text{Expr}}\rangle$。
 
-上下文无关语法中给定的非终结符号可以有多个替换规则。语法生成的语言是所有终止符号字符串的集合，这些字符串可以通过重复的规则应用程序从某个特定的非终止符号（又称为起始符号）派生出来。
-非终结符符号在派生过程中使用，但不会出现在其最终结果字符串中。上下文无关语言（CFL，Context-Free Language）可由上下文无关语法生成，不同的上下文无关语法可以生成相同的上下文无关语言。
+上下文无关语法中给定的非终止符号可以有多个替换规则。语法生成的语言是所有终止符号字符串的集合，这些字符串可以通过重复的规则应用程序从某个特定的非终止符号（又称为起始符号）派生出来。
+非终止符符号在派生过程中使用，但不会出现在其最终结果字符串中。上下文无关语言（CFL，Context-Free Language）可由上下文无关语法生成，不同的上下文无关语法可以生成相同的上下文无关语言。
 
 \subsection{概率无关上下文语法}
 
 模拟符号串的语法理论起源于计算语言学中理解自然语言结构的工作\cite{chomsky1956three,chomsky1959certain,lees1957syntactic}。
 概率上下文无关文法（PCFG，Probabilistic Context-Free Grammar）在计算语言学中引入近40年后被应用于RNA结构的概率建模等领域\cite{sakakibara1994stochastic}。
 
-概率无关上下文语法扩展上下文无关语法的方式类似于隐马尔可夫模型扩展正则表达式语法的方式，其每个产生式都具有相应的概率，语法中的任意非终止符最终推导出终止符串的概率是该推导过程中使用到的所有产生式概率的乘积。
-某些情况下，产生式的概率可以视为数学模型的参数，这些参数可通过机器学习的方式预估计算，但概率语法的有效性受到其训练数据集上下文的约束。
-为了设计出高效的概率无关上下文语法，则必须权衡可伸缩性和通用性等因素，因此必须解决语法歧义问题的同时还需满足语法分析算法中的时间和内存需求。
+概率上下文无关语法对于上下文无关语法的扩展在于为每一个产生式赋予了一个概率值，其可以表示为 $\displaystyle A \rightarrow \beta [p]$, 这里p表示给定的非终止符A展开到序列$\beta$的概率，
+因此，如果我们考虑非终止符的所有可能展开，它们的概率之和必须是1：$\displaystyle \sum_\beta P(A \rightarrow \beta) \equal 1$。
+如果某个语言中所有语句的概率之和等于1，则称该语言的概率上下文无关语法是一致的。某些类型的递归产生式会导致某些语句的无限循环派生，从而导致语法不一致。
+例如，一条为$\displaystyle S \rightarrow S$且概率为1的规则将由于永远不会终止的推导而导致概率质量损失\cite{1672339}。
 
-概率无关上下文语法中有三个比较重要的概念，分别是推导、解析和解析树。
-推导是从语法中的非终止符递归生成字符串; 解析使用自动机查找有效的推导; 解析树则将语法与输入文本序列进行对齐。
-概率无关上下文语法实现的一个示例是下推自动机\cite{sippl1999biological}，该算法以类似堆栈的方式从左到右暴力解析语法非终结符，而后来的Cocke–Younger–Kasami（CYK）算法的变体提供了比下推自动机更有效的语法分析替代方法。
-概率无关上下文语法实现的另一个示例是Stanford统计解析器\cite{klein2003accurate}，它使用TreeBank语料集进行训练。
+PCFG可用于估计关于语句及其解析树的许多有用概率，包括特定解析树的概率（用于消歧）和语句或语句片段的概率（用于语言建模）。
+PCFG会为输入语句的每个解析树（即每个派生）分配一个概率，该属性在消歧中很有用。对于一个语句S的某个解析树T，其概率被定义为该解析树中n条产生式$\displaystyle LHS_i \rightarrow RHS_i$的概率乘积,
+其中LHS表示左手端符号，RHS表示右手端符号，则解析树T和语句S的联合概率可以表示为：$\displaystyle P(T, S) = \prod_{i \equal 1}^{n} P(RHS_i|LHS_i)$，
+又因为该解析树T必然生成语句S，即$\displaystyle P(S|T) \equal 1$，所以有$\displaystyle P(T, S) \equal P(T)P(S|T) \equal P(T)$, 最终解析树的概率将被计算出来。
+
+概率上下文无关语法的概率学习一般有两种方式。一种为使用成熟的解析树库，即存放已经被解析的语句构成的语料集，比较典型的是Penn Treebank库\cite{Penn-Treebank}，这是有Linguistic Data
+Consortium分发的一个包含英语，中文以及其他语言的语料集。给定一个解析树库，我们可以通过计算扩展发生的次数，然后进行归一化，来计算非终止符的派生概率，这也是朴素贝叶斯模型的思想。
+其公式为$\displaystyle P(\alpha \rightarrow \beta) \equal \frac{\textup{Count}(\alpha \rightarrow \beta)}{\sum_{\gamma}\textup{Count}(\alpha \rightarrow \gamma)} \equal \frac{\textup{Count}(\alpha \rightarrow \beta)}{\textup{Count}(\alpha)}$。
+
+另一种方式针对不存在可用解析树库的情况下，可以首先使用非概率的解析器，从需要我们分析的语料库中计算所有可能产生式的计数，然后通过朴素贝叶斯模型获取每个产生式的概率。
+
+但现实场景中许多语句都是具有歧义性的，即一个语句会具有多个语法解析树，导致难以判断在哪个语法分析中计算产生式的概率。
+所以我们需要为一个语句的每个语法解析树保留一个单独的计数，并根据它出现在语法分析中的概率对这些语法解析树的计数进行加权。
+但是为了获取语法解析树的原始概率，我们又需要一个已有概率解析器，造成了典型的循环论证问题。
+对于概率上下文无关语法中的这种问题的直觉算法是，通过从具有相同规则概率的解析器开始解析句子，计算每个解析树的概率，
+再使用这些概率加权每个产生式计数，重新估计规则概率，如此反复直到概率收敛于某一数值为止。计算这一问题的标准算法被称为内-外算法，是隐马尔可夫模型中的前-后算法的一种衍生算法\cite{1979Trainable}。
+
+% 概率无关上下文语法扩展上下文无关语法的方式类似于隐马尔可夫模型扩展正则表达式语法的方式，其每个产生式都具有相应的概率，语法中的任意非终止符最终推导出终止符串的概率是该推导过程中使用到的所有产生式概率的乘积。
+% 某些情况下，产生式的概率可以视为数学模型的参数，这些参数可通过机器学习的方式预估计算，但概率语法的有效性受到其训练数据集上下文的约束。
+% 为了设计出高效的概率无关上下文语法，则必须权衡可伸缩性和通用性等因素，因此必须解决语法歧义问题的同时还需满足语法分析算法中的时间和内存需求。
+
+% 概率无关上下文语法中有三个比较重要的概念，分别是推导、解析和解析树。
+% 推导是从语法中的非终止符递归生成字符串; 解析使用自动机查找有效的推导; 解析树则将语法与输入文本序列进行对齐。
+% 概率无关上下文语法实现的一个示例是下推自动机\cite{sippl1999biological}，该算法以类似堆栈的方式从左到右暴力解析语法非终止符，而后来的Cocke–Younger–Kasami（CYK）算法的变体提供了比下推自动机更有效的语法分析替代方法。
+% 概率无关上下文语法实现的另一个示例是Stanford统计解析器\cite{klein2003accurate}，它使用TreeBank语料集进行训练。
+
+
 
 \subsection{CYK算法}
 
@@ -38,8 +62,40 @@
 它采用自下而上的解析和动态规划。
 CYK的标准版本仅对以乔姆斯基范式（CNF，Chomsky Normal Form）给出的上下文无关语法进行操作。但是，任何上下文无关语法都可以（在约定之后）转换为表示相同语言的乔姆斯基范式语法。
 
-CYK算法的重要性源于它在某些情况下的高效性。使用大O表示法，CYK最坏情况下的运行时间是$\displaystyle \mathcal{O} (n^{3} \cdot |G|)$，其中n是解析字符串的长度，|G|是乔姆斯基范式语法G的大小.
+CYK算法的重要性源于它在某些情况下的高效性。使用大O表示法，CYK最坏情况下的运行时间是$\displaystyle \mathcal{O} (n^{3} \cdot |G|)$，其中n是解析语句的长度，|G|是乔姆斯基范式语法G的大小.
 这使得它在最坏情况下的渐近复杂度方面成为最有效的解析算法之一，尽管在许多实际场景中存在其他算法具有更好的平均运行时间\cite{sipser1997context}。
+CYK算法可见算法~\ref{algo:tree_construction}，其中CYK将以概率上下文无关语法与某个语句作为输入，得到该语句具有最大概率的一棵解析树以及该解析树的概率。
+
+\begin{algorithm}[h]
+    \SetAlgoVlined
+    \KwData{概率上下文无关语法及可由该语法生成的语句}
+    \KwResult{具有最大概率的一棵解析树以及该解析树的概率}
+    \BlankLine
+
+    initialization\;
+    \For{\text{j \leftarrow 1 \KwTo \textup{LENGTH}(string)}} {
+        \ForAll{ $\left\{ A | A \rightarrow string[j] \in grammar \right\}$}{
+            \tcp{table为动态规划表，P(x) 为产生式x的概率}
+            $table[j-1, j, A] \leftarrow P(A \rightarrow string[j])$\;
+        }
+
+        \For{\text{i \leftarrow j - 2 \KwTo 0}}{
+            \For{\text{k \leftarrow i + 1 \KwTo j - 1}}{
+                \ForAll{$\left\{A | A \rightarrow BC \in grammar \right\}$ {\bf and} $table[i,k,B] \ge 0$ {\bf and} $table[k,j,c] \ge 0$}{
+                    \If{$(table[i,j,A] \less P(A \rightarrow BC) \times table[i,k,B] \times table[k,j,c])$}{
+                        $table[i,j,A] \leftarrow  P(A \rightarrow BC) \times table[i,k,B] \times table[k,j,c]$\;
+                        \tcp{back为动态规划回溯表}
+                        $back[i,j,A] \leftarrow \left\{k,B,C\right\}$\;
+                    }
+                }
+            }
+        }
+    }
+    \Return{\text{\textup{BUILD\_TREE}(back[1, \textup{LENGTH}(string), S], table[1, \textup{LENGTH}(string), S])}}
+    \caption{CYK算法}
+    \label{algo:tree_construction}
+\end{algorithm}
+
 
 \section{SciKit-Learn框架}
 

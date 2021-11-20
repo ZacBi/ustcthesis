@@ -11,8 +11,7 @@
 再以信息检索为例，一个典型的查询为‘十月一日是什么日子’，检索系统需要识别文本中的非结构化数据‘十月一日’并归一化到日历时间或日期时间上，并以这一结构化时间为特征索引查找相应的事件或别称。
 因此，为了推理文本中出现的有关时间的信息，并与上下文中的事件或任务进行绑定，时间表达式的识别和归一化的任务应运而生。
 
-时间表达式的识别，是识别文本中包含的显示或隐式的时间对象并判断时间对象之间时序关系的过程。识别出的时间可能包含一段具体的时间段（e.g.\ 3年）、事件（e.g.\ 国庆节）以及一些解释或表明时间实体间关系的词语（e.g.\ 下个）。
-
+时间表达式的识别，是识别文本中包含的显示或隐式的时间对象并判断时间对象之间时序关系的过程。识别出的时间可能包含一段具体的时间段（e.g.\ 3年）、事件（e.g.\ 国庆节）以及一些解释或表明时间实体间关系的词语（e.g.\ 下个）；
 时间表达式的归一化，是将从文本中抽取的时间实体映射成为时间轴上的一个时间点（timepoint）或一段时间（duration）。
 时间点既可能是日历日期（date）或一天中的时间（time of day），也可能是两者的组合。时间段则是时间轴上一段包含起点和终点的时间区间。本文统一简称时间表达式的识别和归一化为时间信息抽取。
 
@@ -25,7 +24,7 @@
 其次，在同时含有对事件的识别以及将含有具体时间的实体与事件相联系的时间抽取任务中，无法推算时间实体间的关系。ISO-TimeML不能定义一个相对时间的格式化数据，比如医疗临床文本通常需要的‘手术前五天’这样的典型文本。
 再者，不能展现时间的组合语义。例如，‘下个’这样的时间方位词，不仅能与‘年’结合（下年），还能与‘周’、‘星期三’、‘8月’这样的非日历时间单位组合，虽然组合结果不同，但都隐含的表现出这样的时间语义：在时间轴上，多个不同维度或大小的时间字段的组合结果在给定上下文后可映射到轴上某一点或某一区间。
 
-针对以上问题, 本系统在使用正则规则识别实体基础之上, 进一步采用统计句法分析中的概率上下文无关语法（PCFG，probabilistic context-free grammar）来识别文本中的时间表达式, 
+针对以上问题, 本系统在使用正则规则识别实体基础之上, 进一步采用统计句法分析中的概率上下文无关语法（PCFG，probabilistic context-free grammar）来识别文本中的时间表达式,
 以减少手工配置正则规则的繁琐过程和避免不同正则间产生的规则碰撞。
 同时, 本系统在实体解析的过程中为每一个识别出的时间表达式构建概率语法树, 尽可能直观的展现时间表达式的解析过程和解决中文时间表达式语法及语义冲突的问题, 以不断优化正则配置项, 反过来提升实体识别的准确度。
 最后, 实体解析的结果将以时间表达式语义组合标注的方式补充ISO-TimeML Timex3标注格式的不足之处, 使其在时间语义表现上更加完整，以提升中文时间表达式信息抽取的最终呈现效果。
@@ -61,7 +60,7 @@
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.8\textwidth]{标注过程.pdf}
+    \includegraphics[width=0.7\textwidth]{标注过程.pdf}
     \caption{时间表达式标注过程}
     \label{fig:tagging_pregress}
 \end{figure}
@@ -105,7 +104,6 @@ FudanNLP\cite{qiu2013fudannlp}是最早通用的采用规则的时间标注器�
 
 \subsection{国外研究现状}
 
-
 截止目前，在时间抽取任务语料库上达到SOTA（state-of-the-art）的时间标注器有：HeidelTime1\cite{strotgen2010heideltime}，SuTime\cite{chang2012sutime}，Chrono\cite{olex2018chrono}和ManTIME\cite{filannino2013mantime}。
 时间标注器的评估标准在时间表达式的识别和归一化两方面有所不同，前者侧重于正确的识别文本中有关时间的片段，后者侧重于将时间表达式归一化到统一格式，其复杂程度取决于识别到的时间表达式的类型。
 时间信息抽取的通用评估方法是$F_β$-measure，具体公式可参考公式~\ref{eq:group}。
@@ -113,11 +111,11 @@ FudanNLP\cite{qiu2013fudannlp}是最早通用的采用规则的时间标注器�
 $\beta$则为常系数，其越大时评估方法更侧重于对于精度的考察。
 
 \begin{subequations}\label{eq:group}
-\begin{alignat}{1}
-    P & = \frac{TP}{TP + FP} \\
-    R & = \frac{TP}{TP + FN} \\
-    F_\beta & = \frac{(\beta^2 + 1) \times P \times R}{\beta^2 \times P + R}
-\end{alignat}
+    \begin{alignat}{1}
+        P       & = \frac{TP}{TP + FP}                                           \\
+        R       & = \frac{TP}{TP + FN}                                           \\
+        F_\beta & = \frac{(\beta^2 + 1) \times P \times R}{\beta^2 \times P + R}
+    \end{alignat}
 \end{subequations}
 
 SuTime和HeidelTime都是基于规则（rule-based）开发的，前者由Stanford开发，对英语文本进行单独优化；后者由\citet{strotgen2010heideltime}开发，同时做到了跨语言（英语，德语，中文等）和跨领域（新闻与记叙文）的时间标注，其提出了一种自动翻译与人工标注相结合的方式，以解决跨领域、跨语言的时间信息抽取。
@@ -139,12 +137,12 @@ ManTime\cite{filannino2013mantime}采用条件随机场（CRF，conditional rand
     \item[(3)]  Duration：时长，如‘3天’；
     \item[(4)]  Duration Interval：时长形成的区间，如‘3到五天’；
     \item[(5)]  Advanced features：
-          \begin{enumerate}
-              \item[(a)] Frequency，如‘每两天’；
-              \item[(b)] Shift，如‘三天后’；
-              \item[(c)] Complex time expression，如‘明天下午三点到五点’；
-              \item[(d)] Others。
-          \end{enumerate}
+        \begin{enumerate}
+            \item[(a)] Frequency，如‘每两天’；
+            \item[(b)] Shift，如‘三天后’；
+            \item[(c)] Complex time expression，如‘明天下午三点到五点’；
+            \item[(d)] Others。
+        \end{enumerate}
 \end{enumerate}
 
 工业界落地的项目中，基本是采用规则的方式解决时间识别的问题，如阿里云小蜜（Alibaba ISR），百度unit（Baidu Unit）。
