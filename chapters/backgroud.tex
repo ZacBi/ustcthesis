@@ -11,7 +11,7 @@
 
 上下文无关语法在形式语言理论中是一种形式语法，本质上是一组产生式规则，用以描述给定形式语言中所有可能的字符串。其产生式规则形如：A \rightarrow $\alpha$。
 其中A为非终止符，$\alpha$则是由一组终止符，非终止符或空串组成的符号串。
-它与上下文相关语法的区别主要在于任何情况下左侧的单个非终止符都可以替换为右侧的符号串，即无论非终止符的上下文是什么，它的产生式规则可以被应用。
+它与上下文相关语法的区别主要在于任何情况下左侧的单个非终止符都可以替换为右侧的符号串，即无论非终止符的上下文是什么，它的产生式规则都可以被应用。
 产生式规则的应用就是进行简单的替换。例如这一条规则: $\displaystyle \langle {\text{Stmt}}\rangle \to \langle {\text{Id}}\rangle =\langle {\text{Expr}}\rangle$，
 可以用$\displaystyle \langle {\text{Stmt}}\rangle$ 取代 $\langle {\text{Id}}\rangle =\langle {\text{Expr}}\rangle$。
 
@@ -25,24 +25,24 @@
 
 概率上下文无关语法对于上下文无关语法的扩展在于为每一个产生式赋予了一个概率值，其可以表示为 $\displaystyle A \rightarrow \beta [p]$, 这里p表示给定的非终止符A展开到序列$\beta$的概率，
 因此，如果我们考虑非终止符的所有可能展开，它们的概率之和必须是1：$\displaystyle \sum_\beta P(A \rightarrow \beta) \equal 1$。
-如果某个语言中所有语句的概率之和等于1，则称该语言的概率上下文无关语法是一致的。某些类型的递归产生式会导致某些语句的无限循环派生，从而导致语法不一致。
-例如，一条为$\displaystyle S \rightarrow S$且概率为1的规则将由于永远不会终止的推导而导致概率质量损失\cite{1672339}。
+如果某个语言中所有语句的概率之和等于1，则称该语言的概率上下文无关语法是一致的。某些类型的递归产生式会导致某些语句的无限循环派生造成语法不一致，
+例如一条为$\displaystyle S \rightarrow S$且概率为1的规则将由于永远不会终止的推导而导致概率质量损失\cite{1672339}。
 
-PCFG可用于估计关于语句及其解析树的许多有用概率，包括特定解析树的概率（用于消歧）和语句或语句片段的概率（用于语言建模）。
-PCFG会为输入语句的每个解析树（即每个派生）分配一个概率，该属性在消歧中很有用。对于一个语句S的某个解析树T，其概率被定义为该解析树中n条产生式$\displaystyle LHS_i \rightarrow RHS_i$的概率乘积,
+概率上下文无关文法可用于估计关于语句及其解析树的许多有用概率，包括特定解析树的概率（用于消歧）和语句或语句片段的概率（用于语言建模）。
+概率上下文无关文法会为输入语句的每个解析树（即每个派生）分配一个概率，该属性在消歧中很有用。对于一个语句S的某个解析树T，其概率被定义为该解析树中n条产生式$\displaystyle LHS_i \rightarrow RHS_i$的概率乘积,
 其中LHS表示左手端符号，RHS表示右手端符号，则解析树T和语句S的联合概率可以表示为：$\displaystyle P(T, S) = \prod_{i \equal 1}^{n} P(RHS_i|LHS_i)$，
 又因为该解析树T必然生成语句S，即$\displaystyle P(S|T) \equal 1$，所以有$\displaystyle P(T, S) \equal P(T)P(S|T) \equal P(T)$, 最终解析树的概率将被计算出来。
 
-概率上下文无关语法的概率学习一般有两种方式。一种为使用成熟的解析树库，即存放已经被解析的语句构成的语料集，比较典型的是Penn Treebank库\cite{Penn-Treebank}，这是有Linguistic Data
-Consortium分发的一个包含英语，中文以及其他语言的语料集。给定一个解析树库，我们可以通过计算扩展发生的次数，然后进行归一化，来计算非终止符的派生概率，这也是朴素贝叶斯模型的思想。
-其公式为$\displaystyle P(\alpha \rightarrow \beta) \equal \frac{\textup{Count}(\alpha \rightarrow \beta)}{\sum_{\gamma}\textup{Count}(\alpha \rightarrow \gamma)} \equal \frac{\textup{Count}(\alpha \rightarrow \beta)}{\textup{Count}(\alpha)}$。
+概率上下文无关语法的概率学习一般有两种方式。一种为使用成熟的解析树库，即存放已经被解析的语句构成的语料集，比较典型的是Penn Treebank库，这是由Linguistic Data Consortium分发的一个包含英语，
+中文以及其他语言的语料集\cite{Penn-Treebank}。给定一个解析树库，我们可以通过计算产生式出现的次数进行归一化来计算非终止符的派生概率，
+这也是朴素贝叶斯模型的思想，其公式为$\displaystyle P(\alpha \rightarrow \beta) \equal \frac{\textup{Count}(\alpha \rightarrow \beta)}{\sum_{\gamma}\textup{Count}(\alpha \rightarrow \gamma)} \equal \frac{\textup{Count}(\alpha \rightarrow \beta)}{\textup{Count}(\alpha)}$。
 
 另一种方式针对不存在可用解析树库的情况下，可以首先使用非概率的解析器，从需要我们分析的语料库中计算所有可能产生式的计数，然后通过朴素贝叶斯模型获取每个产生式的概率。
 
 但现实场景中许多语句都是具有歧义性的，即一个语句会具有多个语法解析树，导致难以判断在哪个语法分析中计算产生式的概率。
 所以我们需要为一个语句的每个语法解析树保留一个单独的计数，并根据它出现在语法分析中的概率对这些语法解析树的计数进行加权。
 但是为了获取语法解析树的原始概率，我们又需要一个已有概率解析器，造成了典型的循环论证问题。
-对于概率上下文无关语法中的这种问题的直觉算法是，通过从具有相同规则概率的解析器开始解析句子，计算每个解析树的概率，
+对于概率上下文无关语法中的这种问题的直觉算法是，通过从具有相同规则概率的解析器开始解析句子计算每个解析树的概率，
 再使用这些概率加权每个产生式计数，重新估计规则概率，如此反复直到概率收敛于某一数值为止。计算这一问题的标准算法被称为内-外算法，是隐马尔可夫模型中的前-后算法的一种衍生算法\cite{1979Trainable}。
 
 % 概率无关上下文语法扩展上下文无关语法的方式类似于隐马尔可夫模型扩展正则表达式语法的方式，其每个产生式都具有相应的概率，语法中的任意非终止符最终推导出终止符串的概率是该推导过程中使用到的所有产生式概率的乘积。
@@ -58,11 +58,11 @@ Consortium分发的一个包含英语，中文以及其他语言的语料集。�
 
 \subsection{CYK算法}
 
-在计算机科学中，Cocke–Younger–Kasami算法（也称为CYK，或CKY）是Itiroo Sakai\cite{mey1965international}于1961年发布的上下文无关语法解析算法，
-它采用自下而上的解析和动态规划。
-CYK的标准版本仅对以乔姆斯基范式（CNF，Chomsky Normal Form）给出的上下文无关语法进行操作。但是，任何上下文无关语法都可以（在约定之后）转换为表示相同语言的乔姆斯基范式语法。
+Cocke–Younger–Kasami算法（也称为CYK，或CKY）是Itiroo Sakai\cite{mey1965international}于1961年发布的上下文无关语法解析算法，
+它采用自下而上的解析和动态规划思想解决概率上下文无关语法中存在的歧义性问题。
+CYK的标准版本仅对以乔姆斯基范式（CNF，Chomsky Normal Form）给出的上下文无关语法进行操作。但是任何上下文无关语法都可以（在约定之后）转换为表示相同语言的乔姆斯基范式语法。
 
-CYK算法的重要性源于它在某些情况下的高效性。使用大O表示法，CYK最坏情况下的运行时间是$\displaystyle \mathcal{O} (n^{3} \cdot |G|)$，其中n是解析语句的长度，|G|是乔姆斯基范式语法G的大小.
+CYK算法的重要性源于它在某些情况下的高效性。使用大O表示法，CYK最坏情况下的运行时间是$\displaystyle \mathcal{O} (n^{3} \cdot |G|)$，其中n是解析语句的长度，|G|为乔姆斯基范式语法G的大小。
 这使得它在最坏情况下的渐近复杂度方面成为最有效的解析算法之一，尽管在许多实际场景中存在其他算法具有更好的平均运行时间\cite{sipser1997context}。
 CYK算法可见算法~\ref{algo:tree_construction}，其中CYK将以概率上下文无关语法与某个语句作为输入，得到该语句具有最大概率的一棵解析树以及该解析树的概率。
 

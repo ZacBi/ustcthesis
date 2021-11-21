@@ -1,0 +1,81 @@
+<mxfile host="65bd71144e">
+    <diagram id="dDPzNShVRNH9cPpfi_1M" name="第 1 页">
+        <mxGraphModel dx="847" dy="1150" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="4" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=17;fontColor=#000000;" edge="1" parent="1" source="iVKF6QRcsDcTEFVmEp1s-2" target="iVKF6QRcsDcTEFVmEp1s-4">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="iVKF6QRcsDcTEFVmEp1s-2" value="" style="ellipse;shape=doubleEllipse;html=1;dashed=0;whitespace=wrap;aspect=fixed;fontFamily=SimSun;fontSize=17;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="210" width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=17;fontColor=#000000;" edge="1" parent="1" source="iVKF6QRcsDcTEFVmEp1s-4" target="iVKF6QRcsDcTEFVmEp1s-26">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="iVKF6QRcsDcTEFVmEp1s-4" value="&lt;span style=&quot;font-size: 17px;&quot;&gt;加载&lt;/span&gt;&lt;span style=&quot;font-size: 17px; font-family: &amp;quot;firacode nf&amp;quot;, consolas, &amp;quot;courier new&amp;quot;, monospace, consolas, &amp;quot;courier new&amp;quot;, monospace;&quot;&gt;信息抽取系统分析与展示模块&lt;/span&gt;&lt;span style=&quot;font-size: 17px;&quot;&gt;配置&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=SimSun;fontSize=17;labelBackgroundColor=none;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="200" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=17;fontColor=#000000;" edge="1" parent="1" source="iVKF6QRcsDcTEFVmEp1s-13" target="iVKF6QRcsDcTEFVmEp1s-32">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="iVKF6QRcsDcTEFVmEp1s-13" value="设置前端页面&lt;br style=&quot;font-size: 17px;&quot;&gt;查询需求" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=SimSun;fontSize=17;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="320" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=17;fontColor=#000000;" edge="1" parent="1" source="iVKF6QRcsDcTEFVmEp1s-17">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="100" y="470" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="iVKF6QRcsDcTEFVmEp1s-17" value="数据库存储模块&lt;br style=&quot;font-size: 17px;&quot;&gt;处理需求" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=SimSun;fontSize=17;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="320" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="iVKF6QRcsDcTEFVmEp1s-18" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;fontFamily=SimSun;fontSize=17;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="550" y="450" width="60" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=17;fontColor=#000000;" edge="1" parent="1" source="iVKF6QRcsDcTEFVmEp1s-20" target="iVKF6QRcsDcTEFVmEp1s-15">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="iVKF6QRcsDcTEFVmEp1s-20" value="前端页面配置&lt;br style=&quot;font-size: 17px;&quot;&gt;关联接口" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=SimSun;fontSize=17;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="200" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=17;fontColor=#000000;" edge="1" parent="1" source="iVKF6QRcsDcTEFVmEp1s-26" target="iVKF6QRcsDcTEFVmEp1s-20">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="iVKF6QRcsDcTEFVmEp1s-26" value="&lt;span style=&quot;font-size: 17px; font-family: &amp;quot;firacode nf&amp;quot;, consolas, &amp;quot;courier new&amp;quot;, monospace, consolas, &amp;quot;courier new&amp;quot;, monospace;&quot;&gt;信息抽取系统分析与&lt;br style=&quot;font-size: 17px;&quot;&gt;展示模块启动&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=SimSun;fontSize=17;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="200" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=17;fontColor=#000000;" edge="1" parent="1" source="iVKF6QRcsDcTEFVmEp1s-28" target="iVKF6QRcsDcTEFVmEp1s-35">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="iVKF6QRcsDcTEFVmEp1s-28" value="数据导入&lt;br style=&quot;font-size: 17px;&quot;&gt;MongoDB完成" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=SimSun;fontSize=17;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="440" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=17;fontColor=#000000;" edge="1" parent="1" source="iVKF6QRcsDcTEFVmEp1s-32" target="iVKF6QRcsDcTEFVmEp1s-17">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="iVKF6QRcsDcTEFVmEp1s-32" value="后端模块解析&lt;br style=&quot;font-size: 17px;&quot;&gt;查询需求" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=SimSun;fontSize=17;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="320" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=17;fontColor=#000000;" edge="1" parent="1" source="iVKF6QRcsDcTEFVmEp1s-34" target="iVKF6QRcsDcTEFVmEp1s-18">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="iVKF6QRcsDcTEFVmEp1s-34" value="后端模块封装数据" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=SimSun;fontSize=17;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="440" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=17;fontColor=#000000;" edge="1" parent="1" source="iVKF6QRcsDcTEFVmEp1s-35" target="iVKF6QRcsDcTEFVmEp1s-34">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="iVKF6QRcsDcTEFVmEp1s-35" value="前端模块渲染数据可视化呈现" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=SimSun;fontSize=17;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="440" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontSize=17;fontColor=#000000;" edge="1" parent="1" source="iVKF6QRcsDcTEFVmEp1s-15" target="iVKF6QRcsDcTEFVmEp1s-13">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="iVKF6QRcsDcTEFVmEp1s-15" value="前端页面&lt;br style=&quot;font-size: 17px;&quot;&gt;发送查询需求" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=SimSun;fontSize=17;fontColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="320" width="120" height="80" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
